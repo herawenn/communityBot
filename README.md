@@ -1,5 +1,7 @@
 # Discord Bot
 
+![](https://i.imgur.com/5mp2Siz.png)
+
 ![Discord Bot](https://i.imgur.com/KUk1lpR.png)
 
 A multi-purpose Discord bot with various commands and functionalities.
