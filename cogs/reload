@@ -2,10 +2,8 @@ from discord.ext import commands
 import os
 import json
 
-
 with open('config.json') as f:
     config = json.load(f)
-
 
 class Reload(commands.Cog):
     def __init__(self, bot):
@@ -17,7 +15,6 @@ class Reload(commands.Cog):
         await ctx.send("Reloading...")
         await self.bot.close()
         os.system("python bot.py")
-
 
 async def setup(bot):
     await bot.add_cog(Reload(bot))
