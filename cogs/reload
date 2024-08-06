@@ -18,7 +18,7 @@ class Reload(commands.Cog):
             await ctx.send(f"`Reloading, please wait...`")
             logger.info(f"Reloading the bot as requested by {ctx.author} in {ctx.guild}")
             await self.bot.close()
-            os.system("python bot.py")
+            os.system("python3 bot.py")
         except Exception as e:
             logger.error(f"Error occurred while reloading the bot: {e}", exc_info=True)
             await ctx.send(f"Error: An unexpected error occurred while reloading the bot. Details: {e}")
