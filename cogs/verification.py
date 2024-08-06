@@ -40,18 +40,23 @@ class Verification(commands.Cog):
                 color=discord.Color(0x6900ff),
             )
             view = discord.ui.View()
-            view.add_item(discord.ui.Button(label="Verify", style=discord.ButtonStyle.secondary))
+            button = discord.ui.Button(label="Verify", style=discord.ButtonStyle.secondary)
 
             async def button_callback(interaction):
                 try:
-                    await interaction.response.send_message("Verification successful!", ephemeral=True)
+                    initial_role_id = config.get('initial_role_id')
+                    initial_role = discord.utils.get(interaction.user.guild.roles, id=initial_role_id)
+                    if initial_role in interaction.user.roles:
+                        await interaction.user.remove_roles(initial_role)
                     await interaction.user.add_roles(verified_role)
+                    await interaction.response.send_message("Verification successful!", ephemeral=False)
                     logger.info(f"User {interaction.user} verified successfully in {ctx.guild}")
                 except Exception as e:
                     logger.error(f"Error during verification: {e}")
-                    await ctx.send("Error during verification. Please try again later.")
+                    await interaction.response.send_message("Error during verification. Please try again later.", ephemeral=False)
 
-            view.children[0].callback = button_callback
+            button.callback = button_callback
+            view.add_item(button)
 
             await ctx.send(embed=embed, view=view)
             logger.info(f"Verification embed sent to channel {verification_channel} in {ctx.guild}")
