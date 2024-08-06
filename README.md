@@ -18,10 +18,12 @@ A multi-purpose Discord bot with various commands and functionalities.
 
 ## Features
 
-- Help command to list all available commands.
-- Verification command to start the verification process.
-- Reload command to reload the bot's code (development only).
-- Clear command to delete a specified number of messages.
+- **Help Command**: Displays information about the bot and its commands.
+- **Verification Command**: Starts the verification process for new users.
+- **Reload Command**: Reloads the bot's code (development only).
+- **Clear Command**: Deletes a specified number of messages.
+- **Automatic Role Assignment**: Automatically assigns an initial role to new users.
+- **Rotating Status**: Cycles through a list of status messages.
 
 ## Installation
 
@@ -53,7 +55,8 @@ A multi-purpose Discord bot with various commands and functionalities.
         "verified_channel_name": "verification",
         "verification_channel_id": "YOUR_VERIFICATION_CHANNEL_ID",
         "botVersion": "1.0.0",
-        "restricted_role_id": "YOUR_RESTRICTED_ROLE_ID"
+        "restricted_role_id": "YOUR_RESTRICTED_ROLE_ID",
+        "initial_role_id": "YOUR_INITIAL_ROLE_ID"
     }
     ```
 
@@ -69,12 +72,14 @@ A multi-purpose Discord bot with various commands and functionalities.
 - **token**: The bot token from the Discord Developer Portal.
 - **owner_id**: The Discord ID of the bot owner.
 - **logging**: Configuration for logging.
+  - **level**: The logging level (e.g., DEBUG, INFO, ERROR).
 - **server_id**: The ID of the server where the bot is used.
 - **verified_role_name**: The name of the role assigned to verified users.
 - **verified_channel_name**: The name of the channel where verification takes place.
 - **verification_channel_id**: The ID of the verification channel.
 - **botVersion**: The version of the bot.
 - **restricted_role_id**: The ID of the role required to use restricted commands.
+- **initial_role_id**: The ID of the role assigned to new users.
 
 ## Commands
 
@@ -97,4 +102,3 @@ Contributions are welcome! Please open an issue or submit a pull request.
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
