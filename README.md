@@ -1,6 +1,6 @@
-# Discord Bot
-
 ![](https://i.imgur.com/5mp2Siz.png)
+
+# PortLords Community Discord Bot
 
 ![Discord Bot](https://i.imgur.com/KUk1lpR.png)
 
