@@ -3,10 +3,8 @@ from discord.ext import commands
 import json
 from bot import logger
 
-
 with open('config.json') as f:
     config = json.load(f)
-
 
 class Verification(commands.Cog):
     def __init__(self, bot):
@@ -61,7 +59,6 @@ class Verification(commands.Cog):
         except Exception as e:
             logger.error(f"An error occurred in the verification command: {e}")
             await ctx.send("An error occurred. Please try again later.")
-
 
 async def setup(bot):
     await bot.add_cog(Verification(bot))
