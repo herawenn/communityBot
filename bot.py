@@ -78,11 +78,12 @@ statuses = [
     "the train come",
     "for The FEDs",
     "Herawen 2024",
-    "Lun Client",
+    "Lunar Client",
     "you cook meth",
     "lego my eggo",
     "kt become katie",
-    "us Above them",
+    "python be great",
+    "my lines disappear",
 ]
 
 status_cycle = cycle(statuses)
@@ -102,7 +103,6 @@ async def on_ready():
 
         loaded_cogs = await load_cogs()
         total_cogs = count_cogs()
-
         missing_cogs = [cog for cog in total_cogs if cog not in loaded_cogs]
 
         change_status.start()
@@ -163,7 +163,7 @@ async def on_message(message):
     try:
         await bot.process_commands(message)
 
-        if message.content.startswith(config['prefix']):
+        if config.get('delete_commands', False) and message.content.startswith(config['prefix']):
             try:
                 await asyncio.sleep(5)
                 await message.delete()
@@ -172,8 +172,10 @@ async def on_message(message):
                 logger.error(f"Missing permissions to delete message from {message.author} in {message.guild}")
                 await message.channel.send(f"{message.author.mention}, I don't have permission to delete your message.")
             except discord.NotFound:
-                logger.error(f"Message not found for deletion from {message.author} in {message.guild}")
-                await message.channel.send(f"{message.author.mention}, your message was already deleted.")
+                logger.error(f"Message not found - {message.author} in {message.guild}")
+                
+                # Don't notify the user if the message is already deleted
+            
             except discord.HTTPException as e:
                 logger.error(f"HTTP exception occurred while deleting message: {e}")
                 await message.channel.send(f"{message.author.mention}, an error occurred while trying to delete your message.")
