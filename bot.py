@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 
 import os
-import time
 import json
 import logging
 import asyncio
 import discord
-from discord.ext import commands, tasks
+from discord.ext import commands
 
 R = '\033[31m'
 G = '\033[92m'
@@ -20,7 +19,6 @@ required_keys = ['prefix', 'token', 'owner_id', 'logging', 'server_id', 'verifie
 if not all(key in config for key in required_keys):
     raise ValueError("Invalid config.json")
 
-# Logging Configuration
 logger = logging.getLogger(__name__)
 logger.setLevel(getattr(logging, config['logging']['level']))
 
@@ -38,21 +36,23 @@ logger.addHandler(console_handler)
 
 bot = commands.Bot(command_prefix=config['prefix'], intents=discord.Intents.all(), help_command=None)
 
-# Helper Functions
+# --- Helper Functions ---
+
 def has_restricted_role():
     restricted_role_id = config.get('restricted_role_id')
     async def predicate(ctx):
         role = discord.utils.get(ctx.author.roles, id=restricted_role_id)
+        logger.debug(f"Checking role for user {ctx.author}: {role}")
         return role is not None
     return commands.check(predicate)
 
 def count_cogs():
-    count = 0
+    cogs = []
     for root, dirs, files in os.walk('./cogs'):
         for filename in files:
             if filename.endswith('.py'):
-                count += 1
-    return count
+                cogs.append(os.path.join(root, filename).replace(os.sep, '.')[2:-3])
+    return cogs
 
 async def load_cogs():
     loaded_cogs = []
@@ -68,7 +68,8 @@ async def load_cogs():
                     logger.error(f"Failed to load cog {cog_module}: {e}")
     return loaded_cogs
 
-# Events
+# --- Bot Events ---
+
 @bot.event
 async def on_ready():
     try:
@@ -84,8 +85,8 @@ async def on_ready():
         print(f"[{G}!{X}] Logged in as: {G}{bot.user}{X}")
         print(f"[{G}!{X}] Discord ID: {G}{bot.user.id}{X}")
         print(f"[{G}!{X}] Bot Version: {G}{config['botVersion']}{X}")
-        print(f"[{G}!{X}] Discord.py Version: {G}{discord.__version__}{X}\n")
-        print(f"[{G}!{X}] Commands: {G}{len(loaded_cogs)}/{total_cogs}{X}")
+        print(f"[{G}!{X}] Discord.py Version: {G}{discord.__version__}{X}")
+        print(f"[{G}!{X}] Commands: {G}{len(loaded_cogs)}/{len(total_cogs)}{X}")
         if missing_cogs:
             print(f"[{G}!{X}] Missing: {R}{' '.join(missing_cogs)}{X}")
 
@@ -102,6 +103,8 @@ async def on_command_error(ctx, error):
         await ctx.send("Error: Missing required argument.")
     elif isinstance(error, commands.BadArgument):
         await ctx.send("Error: Bad argument.")
+    elif isinstance(error, commands.CheckFailure):
+        await ctx.send("Error: You do not have the required role to use this command.")
     else:
         logger.error(f"Command error: {error}")
         await ctx.send(f"Error: An unexpected error occurred. Details: {error}")
@@ -131,7 +134,6 @@ async def on_disconnect():
 async def on_error(event, *args, **kwargs):
     logger.error(f"Error in {event}: {args} {kwargs}")
 
-# Run
 async def main():
     async with bot:
         await bot.start(config['token'])
