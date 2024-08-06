@@ -6,7 +6,6 @@ import json
 with open('config.json') as f:
     config = json.load(f)
 
-
 class Help(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -20,12 +19,11 @@ class Help(commands.Cog):
         )
 
         for cmd in self.bot.commands:
-            embed.add_field(name=f"`{config['prefix']}{cmd.name}`", value=cmd.help, inline=False)
+            embed.add_field(name=f"`{config['prefix']}{cmd.name}`", value=cmd.help or "No description available.", inline=False)
 
         embed.set_image(url=config.get('help_image', "https://i.imgur.com/5mp2Siz.png"))
         embed.set_footer(text="From PortLords w Love 2024")
         await ctx.send(embed=embed)
-
 
 async def setup(bot):
     await bot.add_cog(Help(bot))
