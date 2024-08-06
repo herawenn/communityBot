@@ -5,7 +5,8 @@ import json
 import logging
 import asyncio
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
+from itertools import cycle
 
 R = '\033[31m'
 G = '\033[92m'
@@ -15,7 +16,9 @@ X = '\033[0m'
 with open('config.json') as f:
     config = json.load(f)
 
-required_keys = ['prefix', 'token', 'owner_id', 'logging', 'server_id', 'verified_role_name', 'verified_channel_name', 'verification_channel_id', 'botVersion', 'restricted_role_id']
+# --- Logging ---
+
+required_keys = ['prefix', 'token', 'owner_id', 'logging', 'server_id', 'verified_role_name', 'verified_channel_name', 'verification_channel_id', 'botVersion', 'restricted_role_id', 'initial_role_id']
 if not all(key in config for key in required_keys):
     raise ValueError("Invalid config.json")
 
@@ -68,7 +71,28 @@ async def load_cogs():
                     logger.error(f"Failed to load cog {cog_module}: {e}")
     return loaded_cogs
 
-# --- Bot Events ---
+# --- Rotating Status ---
+
+statuses = [
+    "hated torrent files",
+    "the train come",
+    "for The FEDs",
+    "Herawen 2024",
+    "Lun Client",
+    "you cook meth",
+    "lego my eggo",
+    "kt become katie",
+    "us Above them",
+]
+
+status_cycle = cycle(statuses)
+
+@tasks.loop(seconds=5)
+async def change_status():
+    status = next(status_cycle)
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=status))
+
+# --- Events ---
 
 @bot.event
 async def on_ready():
@@ -81,7 +105,8 @@ async def on_ready():
 
         missing_cogs = [cog for cog in total_cogs if cog not in loaded_cogs]
 
-        await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="you"))
+        change_status.start()
+
         print(f"[{G}!{X}] Logged in as: {G}{bot.user}{X}")
         print(f"[{G}!{X}] Discord ID: {G}{bot.user.id}{X}")
         print(f"[{G}!{X}] Bot Version: {G}{config['botVersion']}{X}")
@@ -92,6 +117,16 @@ async def on_ready():
 
     except Exception as ex:
         logger.error(f"An error occurred during bot startup: {ex}")
+
+@bot.event
+async def on_member_join(member):
+    initial_role_id = config['initial_role_id']
+    initial_role = discord.utils.get(member.guild.roles, id=initial_role_id)
+    if initial_role:
+        await member.add_roles(initial_role)
+        logger.info(f"Assigned initial role to new user {member} in {member.guild}")
+    else:
+        logger.error(f"Initial role with ID {initial_role_id} not found in {member.guild}")
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -106,8 +141,12 @@ async def on_command_error(ctx, error):
     elif isinstance(error, commands.CheckFailure):
         await ctx.send("Error: You do not have the required role to use this command.")
     else:
-        logger.error(f"Command error: {error}")
+        logger.error(f"Command error: {error}", exc_info=True)
         await ctx.send(f"Error: An unexpected error occurred. Details: {error}")
+
+@bot.event
+async def on_error(event, *args, **kwargs):
+    logger.error(f"Error in {event}: {args} {kwargs}", exc_info=True)
 
 @bot.event
 async def on_command(ctx: commands.Context):
@@ -121,18 +160,31 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-    await bot.process_commands(message)
-    if message.content.startswith(config['prefix']):
-        await asyncio.sleep(5)
-        await message.delete()
+    try:
+        await bot.process_commands(message)
 
-@bot.event
-async def on_disconnect():
-    logger.info("Bot disconnected")
+        if message.content.startswith(config['prefix']):
+            try:
+                await asyncio.sleep(5)
+                await message.delete()
+                logger.info(f"Deleted command message from {message.author} in {message.guild}")
+            except discord.Forbidden:
+                logger.error(f"Missing permissions to delete message from {message.author} in {message.guild}")
+                await message.channel.send(f"{message.author.mention}, I don't have permission to delete your message.")
+            except discord.NotFound:
+                logger.error(f"Message not found for deletion from {message.author} in {message.guild}")
+                await message.channel.send(f"{message.author.mention}, your message was already deleted.")
+            except discord.HTTPException as e:
+                logger.error(f"HTTP exception occurred while deleting message: {e}")
+                await message.channel.send(f"{message.author.mention}, an error occurred while trying to delete your message.")
+            except Exception as e:
+                logger.error(f"Unexpected error occurred while deleting message: {e}", exc_info=True)
+                await message.channel.send(f"{message.author.mention}, an unexpected error occurred while trying to delete your message.")
 
-@bot.event
-async def on_error(event, *args, **kwargs):
-    logger.error(f"Error in {event}: {args} {kwargs}")
+    except discord.HTTPException as e:
+        logger.error(f"Error processing message: {e}")
+    except Exception as e:
+        logger.error(f"Unexpected error in on_message: {e}", exc_info=True)
 
 async def main():
     async with bot:
