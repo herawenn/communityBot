@@ -7,6 +7,8 @@ import asyncio
 import discord
 from discord.ext import commands, tasks
 from itertools import cycle
+from bot import logger
+import music
 
 R = '\033[31m'
 G = '\033[92m'
@@ -15,6 +17,9 @@ X = '\033[0m'
 
 with open('config.json') as f:
     config = json.load(f)
+    
+async def setup(bot):
+    await bot.add_cog(music.Music(bot)) 
 
 # --- Logging ---
 
