@@ -35,7 +35,7 @@ class Brute(commands.Cog):
     async def brute(self, ctx, target_url: str):
         try:
             usernames = ['root', 'admin', 'user', 'guest', 'administrator']
-            password_file = 'utility/wordlist.txt'
+            password_file = 'wordlist.txt'
 
             results = await self.run_hydra(usernames, password_file, target_url)
             await ctx.send(f"Results:\n{'\n'.join(results)}")
