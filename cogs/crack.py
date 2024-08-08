@@ -4,6 +4,7 @@ import hashid
 import asyncio
 import os
 import logging
+import shlex
 
 logger = logging.getLogger(__name__)
 
@@ -21,9 +22,9 @@ class HashCrack(commands.Cog):
             hash_type = hash_info['hash_type']
 
             crack_cmd = {
-               'md5': f"john --format=raw-md5 --wordlist={wordlist} hash.txt",
-               'sha1': f"john --format=raw-sha1 --wordlist={wordlist} hash.txt",
-               'sha256': f"john --format=raw-sha256 --wordlist={wordlist} hash.txt"
+              'md5': f"john --format=raw-md5 --wordlist={wordlist} hash.txt",
+              'sha1': f"john --format=raw-sha1 --wordlist={wordlist} hash.txt",
+              'sha256': f"john --format=raw-sha256 --wordlist={wordlist} hash.txt"
             }.get(hash_type)
 
             if not crack_cmd:
@@ -32,13 +33,9 @@ class HashCrack(commands.Cog):
             with open('hash.txt', 'w') as file:
                 file.write(hash_value)
 
+            args = shlex.split(crack_cmd)
             try:
-                process = await asyncio.create_subprocess_exec(
-                    *crack_cmd.split(),
-                    capture_output=True,
-                    text=True
-                )
-
+                process = await asyncio.create_subprocess_exec(*args, capture_output=True, text=True)
                 stdout, stderr = await process.communicate()
 
                 if process.returncode == 0:
@@ -46,9 +43,11 @@ class HashCrack(commands.Cog):
                     return f"Cracked password: {cracked_password}"
                 else:
                     return f"Failed to crack hash: {stderr}"
-
             except FileNotFoundError:
                 return f"Wordlist not found: {wordlist}"
+            except Exception as e:
+                logger.error(f"An error occurred in the hash cracking command: {e}", exc_info=True)
+                return "An error occurred while executing the hash cracking command. Please try again later."
 
         except Exception as e:
             logger.error(f"An error occurred in the hash cracking command: {e}", exc_info=True)
