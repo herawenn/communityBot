@@ -7,22 +7,14 @@ import discord
 from discord.ext import commands, tasks
 from itertools import cycle
 
-# --- Configuration ---
-
-config_path = 'config.json'
-
-try:
-    with open(config_path) as f:
-        config = json.load(f)
-except FileNotFoundError:
-    raise FileNotFoundError(f"Configuration file not found: {config_path}")
-except json.JSONDecodeError:
-    raise json.JSONDecodeError(f"Invalid JSON format in {config_path}")
+# Load config
+with open('config.json') as f:
+    config = json.load(f)
 
 # --- Logging ---
 
 logger = logging.getLogger(__name__)
-logger.setLevel('DEBUG')
+logger.setLevel(logging.DEBUG)
 file_handler = logging.FileHandler('logs.txt', mode='w', encoding='utf-8')
 file_handler.setLevel(logging.DEBUG)
 file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -31,15 +23,11 @@ logger.addHandler(file_handler)
 
 # --- Bot Setup ---
 
-R = '\033[31m'
-G = '\033[92m'
-X = '\033[0m'
-
 intents = discord.Intents.all()
 
 bot = commands.Bot(command_prefix=config['prefix'], intents=intents, help_command=None)
 
-# --- Rotating Status ---
+# --- Tasks ---
 
 statuses = [
     "Hated torrent files",
@@ -54,6 +42,7 @@ statuses = [
     "you be great",
     "Herawen was here",
 ]
+
 status_cycle = cycle(statuses)
 
 @tasks.loop(seconds=5)
@@ -95,13 +84,15 @@ async def reload_cogs() -> None:
             except Exception as e:
                 logger.error(f"Failed to reload cog {cog_name}: {e}")
 
-# --- Events ---
+# --- Bot Events ---
 
 @bot.event
 async def on_ready() -> None:
     try:
         os.system('cls' if os.name == 'nt' else 'clear')
-
+        R = '\033[31m'
+        G = '\033[92m'
+        X = '\033[0m'
         loaded_cogs, missing_cogs = await load_cogs()
         total_cogs = config.get('cogs', [])
 
@@ -121,8 +112,6 @@ async def on_ready() -> None:
 @bot.event
 async def on_error(event: str, *args, **kwargs) -> None:
     logger.error(f"Unhandled exception in {event}: {args} {kwargs}", exc_info=True)
-
-# --- Main ---
 
 async def main() -> None:
     try:
