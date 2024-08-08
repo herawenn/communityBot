@@ -5,9 +5,6 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-with open('config.json') as f:
-    config = json.load(f)
-
 class Clear(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
