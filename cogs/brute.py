@@ -14,7 +14,7 @@ class BruteForce(commands.Cog):
         for username in usernames:
             command = [
                 'hydra',
-                '-L', usernames,
+                '-l', username,
                 '-P', password_file,
                 f"{service}://{target_ip}"
             ]
