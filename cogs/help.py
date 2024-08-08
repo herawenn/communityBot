@@ -29,7 +29,6 @@ class Help(commands.Cog):
 
             await ctx.send(embed=embed)
         except Exception as e:
-            logger.error(f"An error occurred while executing the help command: {e}")
             await ctx.send("An error occurred while executing the help command. Please try again later.")
 
 async def setup(bot):
