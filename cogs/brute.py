@@ -5,7 +5,7 @@ from discord.ext import commands
 
 logger = logging.getLogger(__name__)
 
-class Brute(commands.Cog):
+class BruteForce(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -43,4 +43,4 @@ class Brute(commands.Cog):
             await ctx.send("An error occurred while executing brute. Please try again later.")
 
 async def setup(bot):
-    await bot.add_cog(Brute(bot))
+    await bot.add_cog(BruteForce(bot))
