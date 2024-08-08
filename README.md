@@ -44,19 +44,29 @@ A multi-purpose Discord bot with various commands and functionalities.
 
     ```json
     {
-        "prefix": "!",
-        "token": "YOUR_DISCORD_BOT_TOKEN",
-        "owner_id": "YOUR_DISCORD_USER_ID",
+        "token": "",
+        "botVersion": "1.0.0",
+        "prefix": "..",
+        "owner_id": "",
+        "verified_role_name": "",
+        "verified_channel_name": "",
+        "verification_channel_id": "",
+        "server_id": "",
+        "gif_url": "",
+        "global_footer": "",
+        "cooldown_duration": "",
+        "spotify_client_token": "",
+        "spotify_client_id": "",
+        "presence": {
+            "activity": "watching",
+            "name": "custom status here"
+        },
+        "cooldowns": {
+            "default": 5
+        },
         "logging": {
             "level": "DEBUG"
-        },
-        "server_id": "YOUR_SERVER_ID",
-        "verified_role_name": "Verified",
-        "verified_channel_name": "verification",
-        "verification_channel_id": "YOUR_VERIFICATION_CHANNEL_ID",
-        "botVersion": "1.0.0",
-        "restricted_role_id": "YOUR_RESTRICTED_ROLE_ID",
-        "initial_role_id": "YOUR_INITIAL_ROLE_ID"
+        }
     }
     ```
 
@@ -80,6 +90,11 @@ A multi-purpose Discord bot with various commands and functionalities.
 - **botVersion**: The version of the bot.
 - **restricted_role_id**: The ID of the role required to use restricted commands.
 - **initial_role_id**: The ID of the role assigned to new users.
+- **cooldown_duration**: The duration you want for the website command.
+- **global_footer**: The message you want at the end of the embeds.
+- **gif_url**: The gif you want to display in the embeds.
+- **spotify_client_token**: The token from Spotify to use their api.
+- **spotify_client_id**: Your Spotify client id.
 
 ## Commands
 
@@ -87,6 +102,18 @@ A multi-purpose Discord bot with various commands and functionalities.
 - **verification**: Starts the verification process.
 - **reload**: Reloads the bot's code (development only).
 - **clear**: Deletes a specified number of messages.
+- **music**: Plays music from spotify.
+- **website**: Gives information about a given website.
+- **log_invite**: Logs invites to the server.
+- **jvctocreate**: Creates a voice channel with VC commands for owner control.
+- **lock**: Locks the current voice channel.
+- **unlock**: Unlocks the current voice channel.
+- **muteall**: Mutes all users in the current voice channel.
+- **unmuteall**: Unmutes all users in the current voice channel.
+- **kickall**: Kicks all users from the current voice channel.
+- **mute**: Mutes a specific user in the current voice channel.
+- **unmute**: Unmutes a specific user in the current voice channel.
+- **kick**: Kicks a specific user from the current voice channel.
 
 ## Cogs
 
@@ -94,6 +121,11 @@ A multi-purpose Discord bot with various commands and functionalities.
 - **reload.py**: Contains the reload command.
 - **verification.py**: Contains the verification command.
 - **clear.py**: Contains the clear command.
+- **ping.py**: Contains the ping command.
+- **website.py**: Contains the website command.
+- **jvctocreate.py**: Contains VC related commands.
+- **music.py**: Contrains the Muisic commands.
+- **invitetrk.py**: Contrains the invite tracking command.
 
 ## Contributing
 

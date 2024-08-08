@@ -207,5 +207,5 @@ class JVCtoCreate(commands.Cog):
         await ctx.send(f"{member.mention} kicked.")
 
 
-def setup(bot):
-    bot.add_cog(JVCtoCreate(bot))
+async def setup(bot):
+    await bot.add_cog(JVCtoCreate(bot))

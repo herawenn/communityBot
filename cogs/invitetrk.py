@@ -29,7 +29,7 @@ class InviteTracker(commands.Cog):
         try:
             invite = await self.get_invite_used(member)
             if invite:
-                self.log_invite(invite, member)
+                self.log_invite_to_channel(invite, member)
         except Exception as e:
             print(f"Error logging invite for {member.name}: {e}")
 
@@ -57,7 +57,7 @@ class InviteTracker(commands.Cog):
         try:
             invite = await self.get_invite_used(member)
             if invite:
-                self.log_invite(invite, member)
+                self.log_invite_to_channel(invite, member)
                 await ctx.send(f"Invite used by {member.name} logged.")
             else:
                 await ctx.send(f"No invite found for {member.name}.")
@@ -66,5 +66,5 @@ class InviteTracker(commands.Cog):
             await ctx.send("An error occurred while logging the invite.")
 
 
-def setup(bot):
-    bot.add_cog(InviteTracker(bot))
+async def setup(bot):
+    await bot.add_cog(InviteTracker(bot))
