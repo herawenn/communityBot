@@ -39,7 +39,6 @@ class BruteForce(commands.Cog):
             results = await self.run_hydra(usernames, password_file, service, target_ip)
             await ctx.send(f"Results:\n{'\n'.join(results)}")
         except Exception as e:
-            logger.error(f"An error occurred while executing brute: {e}", exc_info=True)
             await ctx.send("An error occurred while executing brute. Please try again later.")
 
 async def setup(bot):
