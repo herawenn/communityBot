@@ -1,25 +1,19 @@
 {
   "token": "",
-  "botVersion": "1.0.0",
-  "prefix": "..",
+  "botVersion": "",
+  "prefix": "",
   "owner_id": "",
-  "verified_role_name": "",
-  "verified_channel_name": "",
-  "verification_channel_id": "",
   "server_id": "",
+  "admin_id": "",
   "gif_url": "",
   "global_footer": "",
-  "cooldown_duration": "",
+  "delete_commands": "",
+  "delete_command_delay": "",
+  "password_file": "",
   "spotify_client_token": "",
   "spotify_client_id": "",
-  "presence": {
-    "activity": "watching",
-    "name": "custom status here"
-  },
-  "cooldowns": {
-    "default": 5
-  },
   "logging": {
-    "level": "DEBUG"
-  }
+    "level": ""
+  },
+  "cogs": []
 }
