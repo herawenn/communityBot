@@ -1,6 +1,5 @@
 import discord
 from discord.ext import commands
-import json
 import logging
 
 logger = logging.getLogger(__name__)
@@ -11,7 +10,7 @@ class Clear(commands.Cog):
 
     @commands.command(name="clear", help="Deletes a specified number of messages.")
     @commands.has_permissions(manage_messages=True)
-    async def clear_command(self, ctx, amount: int):
+    async def clear(self, ctx, amount: int):
         logger.info(f"Clear command invoked by {ctx.author} in {ctx.guild} with amount {amount}")
 
         if amount <= 0:
@@ -20,30 +19,47 @@ class Clear(commands.Cog):
             return
 
         try:
-            await ctx.channel.purge(limit=amount + 1)
-            await ctx.send(f"`{amount} messages removed`", delete_after=5)
-            logger.info(f"Successfully removed {amount} messages in {ctx.guild} by {ctx.author}")
+            await self.delete_messages(ctx, amount)
         except discord.Forbidden:
-            await ctx.send("Error: I do not have permission to delete messages in this channel.")
-            logger.error(f"Missing permissions to delete messages in {ctx.guild} by {ctx.author}")
+            await self.handle_forbidden_error(ctx)
         except discord.HTTPException as e:
-            await ctx.send(f"Error: Failed to delete messages. {e}")
-            logger.error(f"HTTP exception occurred while deleting messages in {ctx.guild} by {ctx.author}: {e}")
+            await self.handle_http_error(ctx, e)
         except Exception as e:
-            await ctx.send(f"Error: An unexpected error occurred. Details: {e}")
-            logger.error(f"Unexpected error occurred while deleting messages in {ctx.guild} by {ctx.author}: {e}", exc_info=True)
+            await self.handle_unexpected_error(ctx, e)
 
-    @clear_command.error
-    async def clear_command_error(self, ctx, error):
+    async def delete_messages(self, ctx, amount):
+        await ctx.channel.purge(limit=amount + 1)
+        await ctx.send(f"`{amount} messages removed`", delete_after=5)
+        logger.info(f"Successfully removed {amount} messages in {ctx.guild} by {ctx.author}")
+
+    async def handle_forbidden_error(self, ctx):
+        await ctx.send("Error: I do not have permission to delete messages in this channel.")
+        logger.error(f"Missing permissions to delete messages in {ctx.guild} by {ctx.author}")
+
+    async def handle_http_error(self, ctx, e):
+        await ctx.send(f"Error: Failed to delete messages. {e}")
+        logger.error(f"HTTP exception occurred while deleting messages in {ctx.guild} by {ctx.author}: {e}")
+
+    async def handle_unexpected_error(self, ctx, e):
+        await ctx.send(f"Error: An unexpected error occurred. Details: {e}")
+        logger.error(f"Unexpected error occurred while deleting messages in {ctx.guild} by {ctx.author}: {e}", exc_info=True)
+
+    @clear.error
+    async def clear_error(self, ctx, error):
         if isinstance(error, commands.MissingPermissions):
-            await ctx.send("Error: You do not have permission to use this command.")
-            logger.warning(f"Missing permissions for {ctx.author} in {ctx.guild}")
+            await self.handle_missing_permissions_error(ctx)
         elif isinstance(error, commands.BadArgument):
-            await ctx.send("Error: Please provide a valid number of messages to delete.")
-            logger.warning(f"Invalid argument provided by {ctx.author} in {ctx.guild}")
+            await self.handle_bad_argument_error(ctx)
         else:
-            await ctx.send(f"Error: An unexpected error occurred. Details: {error}")
-            logger.error(f"Unexpected error in clear command by {ctx.author} in {ctx.guild}: {error}", exc_info=True)
+            await self.handle_unexpected_error(ctx, error)
+
+    async def handle_missing_permissions_error(self, ctx):
+        await ctx.send("Error: You do not have permission to use this command.")
+        logger.warning(f"Missing permissions for {ctx.author} in {ctx.guild}")
+
+    async def handle_bad_argument_error(self, ctx):
+        await ctx.send("Error: Please provide a valid number of messages to delete.")
+        logger.warning(f"Invalid argument provided by {ctx.author} in {ctx.guild}")
 
 async def setup(bot):
     await bot.add_cog(Clear(bot))
