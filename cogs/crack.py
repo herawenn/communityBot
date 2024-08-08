@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 class HashCrack(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.default_wordlist = 'utility/wordlist.txt'
+        self.default_wordlist = 'wordlist.txt'
 
     @commands.command(name="crack", help="Crack a hash. (Restricted)")
     @commands.is_owner()
