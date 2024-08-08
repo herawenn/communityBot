@@ -1,12 +1,12 @@
 import discord
 from discord.ext import commands
 import json
-from bot import logger
+import logging
 
+logger = logging.getLogger(__name__)
 
 with open('config.json') as f:
     config = json.load(f)
-
 
 class Clear(commands.Cog):
     def __init__(self, bot):
@@ -47,7 +47,6 @@ class Clear(commands.Cog):
         else:
             await ctx.send(f"Error: An unexpected error occurred. Details: {error}")
             logger.error(f"Unexpected error in clear command by {ctx.author} in {ctx.guild}: {error}", exc_info=True)
-
 
 async def setup(bot):
     await bot.add_cog(Clear(bot))
