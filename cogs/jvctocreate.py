@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 
+
 class JVCtoCreate(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -29,16 +30,16 @@ class JVCtoCreate(commands.Cog):
         await ctx.send(f"Created voice channel: {channel.mention}")
 
         # Add a message to the channel with the commands
-        await channel.send(f"**Welcome to {channel.name}!**")
-        await channel.send(f"**Commands:**")
-        await channel.send(f"`!lock` - Locks the channel, preventing others from joining.")
-        await channel.send(f"`!unlock` - Unlocks the channel, allowing others to join.")
-        await channel.send(f"`!muteall` - Mutes all users in the channel.")
-        await channel.send(f"`!unmuteall` - Unmutes all users in the channel.")
-        await channel.send(f"`!kickall` - Kicks all users from the channel.")
-        await channel.send(f"`!mute <member>` - Mutes a specific user.")
-        await channel.send(f"`!unmute <member>` - Unmutes a specific user.")
-        await channel.send(f"`!kick <member>` - Kicks a specific user from the channel.")
+        await channel.send("**Welcome to {channel.name}!**")
+        await channel.send("**Commands:**")
+        await channel.send("`!lock` - Locks the channel, preventing others from joining.")
+        await channel.send("`!unlock` - Unlocks the channel, allowing others to join.")
+        await channel.send("`!muteall` - Mutes all users in the channel.")
+        await channel.send("`!unmuteall` - Unmutes all users in the channel.")
+        await channel.send("`!kickall` - Kicks all users from the channel.")
+        await channel.send("`!mute <member>` - Mutes a specific user.")
+        await channel.send("`!unmute <member>` - Unmutes a specific user.")
+        await channel.send("`!kick <member>` - Kicks a specific user from the channel.")
 
     @commands.command()
     async def lock(self, ctx):
@@ -204,6 +205,7 @@ class JVCtoCreate(commands.Cog):
         # Kick the target user from the channel
         await member.move_to(None)
         await ctx.send(f"{member.mention} kicked.")
+
 
 def setup(bot):
     bot.add_cog(JVCtoCreate(bot))

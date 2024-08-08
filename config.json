@@ -7,6 +7,11 @@
   "verified_channel_name": "",
   "verification_channel_id": "",
   "server_id": "",
+  "gif_url": "",
+  "global_footer": "",
+  "cooldown_duration": "",
+  "spotify_client_token": "",
+  "spotify_client_id": "",
   "presence": {
     "activity": "watching",
     "name": "custom status here"

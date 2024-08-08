@@ -1,5 +1,6 @@
 from discord.ext import commands
-from bot import logger 
+from bot import logger
+
 
 class Ping(commands.Cog):
     def __init__(self, bot):
@@ -15,6 +16,7 @@ class Ping(commands.Cog):
         except Exception as e:
             logger.error(f"An error occurred in the ping command: {e}")
             await ctx.send("An error occurred while executing the ping command. Please try again later.")
+
 
 async def setup(bot):
     await bot.add_cog(Ping(bot))

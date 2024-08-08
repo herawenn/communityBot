@@ -3,8 +3,10 @@ import json
 from discord.ext import commands
 from bot import logger
 
+
 with open('config.json') as f:
     config = json.load(f)
+
 
 class Help(commands.Cog):
     def __init__(self, bot):
@@ -30,6 +32,7 @@ class Help(commands.Cog):
         except Exception as e:
             logger.error(f"An error occurred in the help command: {e}", exc_info=True)
             await ctx.send("An error occurred while executing the help command. Please try again later.")
+
 
 async def setup(bot):
     await bot.add_cog(Help(bot))

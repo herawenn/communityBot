@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import os
 import json
 import logging
@@ -7,8 +6,6 @@ import asyncio
 import discord
 from discord.ext import commands, tasks
 from itertools import cycle
-from bot import logger
-import music
 
 R = '\033[31m'
 G = '\033[92m'
@@ -17,9 +14,7 @@ X = '\033[0m'
 
 with open('config.json') as f:
     config = json.load(f)
-    
-async def setup(bot):
-    await bot.add_cog(music.Music(bot)) 
+
 
 # --- Logging ---
 
@@ -46,13 +41,16 @@ bot = commands.Bot(command_prefix=config['prefix'], intents=discord.Intents.all(
 
 # --- Helper Functions ---
 
+
 def has_restricted_role():
     restricted_role_id = config.get('restricted_role_id')
+
     async def predicate(ctx):
         role = discord.utils.get(ctx.author.roles, id=restricted_role_id)
         logger.debug(f"Checking role for user {ctx.author}: {role}")
         return role is not None
     return commands.check(predicate)
+
 
 def count_cogs():
     cogs = []
@@ -61,6 +59,7 @@ def count_cogs():
             if filename.endswith('.py'):
                 cogs.append(os.path.join(root, filename).replace(os.sep, '.')[2:-3])
     return cogs
+
 
 async def load_cogs():
     loaded_cogs = []
@@ -93,12 +92,14 @@ statuses = [
 
 status_cycle = cycle(statuses)
 
+
 @tasks.loop(seconds=5)
 async def change_status():
     status = next(status_cycle)
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=status))
 
 # --- Events ---
+
 
 @bot.event
 async def on_ready():
@@ -123,6 +124,7 @@ async def on_ready():
     except Exception as ex:
         logger.error(f"An error occurred during bot startup: {ex}")
 
+
 @bot.event
 async def on_member_join(member):
     initial_role_id = config['initial_role_id']
@@ -132,6 +134,7 @@ async def on_member_join(member):
         logger.info(f"Assigned initial role to new user {member} in {member.guild}")
     else:
         logger.error(f"Initial role with ID {initial_role_id} not found in {member.guild}")
+
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -149,9 +152,11 @@ async def on_command_error(ctx, error):
         logger.error(f"Command error: {error}", exc_info=True)
         await ctx.send(f"Error: An unexpected error occurred. Details: {error}")
 
+
 @bot.event
 async def on_error(event, *args, **kwargs):
     logger.error(f"Error in {event}: {args} {kwargs}", exc_info=True)
+
 
 @bot.event
 async def on_command(ctx: commands.Context):
@@ -159,6 +164,7 @@ async def on_command(ctx: commands.Context):
         await ctx.message.delete()
     except discord.HTTPException as e:
         logger.error(f"Error deleting message: {e}")
+
 
 @bot.event
 async def on_message(message):
@@ -178,9 +184,9 @@ async def on_message(message):
                 await message.channel.send(f"{message.author.mention}, I don't have permission to delete your message.")
             except discord.NotFound:
                 logger.error(f"Message not found - {message.author} in {message.guild}")
-                
+
                 # Don't notify the user if the message is already deleted
-            
+
             except discord.HTTPException as e:
                 logger.error(f"HTTP exception occurred while deleting message: {e}")
                 await message.channel.send(f"{message.author.mention}, an error occurred while trying to delete your message.")
@@ -193,9 +199,11 @@ async def on_message(message):
     except Exception as e:
         logger.error(f"Unexpected error in on_message: {e}", exc_info=True)
 
+
 async def main():
     async with bot:
         await bot.start(config['token'])
+
 
 if __name__ == "__main__":
     if not asyncio.get_event_loop().is_running():

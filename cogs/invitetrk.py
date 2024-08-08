@@ -3,6 +3,7 @@ from discord.ext import commands
 import datetime
 import asyncio
 
+
 class InviteTracker(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -15,7 +16,7 @@ class InviteTracker(commands.Cog):
         await self.bot.wait_until_ready()
         while True:
             try:
-                guild = self.bot.get_guild(817188083325349900)  
+                guild = self.bot.get_guild(817188083325349900)
                 if guild:
                     self.invites = await guild.invites()
                     await asyncio.sleep(60)  # Check every 60 seconds
@@ -39,7 +40,7 @@ class InviteTracker(commands.Cog):
                     return invite
         return None
 
-    def log_invite(self, invite, member):
+    def log_invite_to_channel(self, invite, member):
         now = datetime.datetime.now()
         timestamp = now.strftime("%Y-%m-%d %H:%M:%S")
         log_message = f"**{timestamp}** - **{member.name}#{member.discriminator}** joined using invite code **{invite.code}** (created by **{invite.inviter.name}#{invite.inviter.discriminator}**)"
@@ -62,7 +63,8 @@ class InviteTracker(commands.Cog):
                 await ctx.send(f"No invite found for {member.name}.")
         except Exception as e:
             print(f"Error logging invite for {member.name}: {e}")
-            await ctx.send(f"An error occurred while logging the invite.")
+            await ctx.send("An error occurred while logging the invite.")
+
 
 def setup(bot):
     bot.add_cog(InviteTracker(bot))
