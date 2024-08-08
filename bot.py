@@ -18,7 +18,7 @@ with open('config.json') as f:
 
 # --- Logging ---
 
-required_keys = ['prefix', 'token', 'owner_id', 'logging', 'server_id', 'verified_role_name', 'verified_channel_name', 'verification_channel_id', 'botVersion', 'restricted_role_id', 'initial_role_id']
+required_keys = ['prefix', 'token', 'owner_id', 'logging', 'server_id', 'verified_role_name', 'verified_channel_name', 'verification_channel_id', 'botVersion', 'restricted_role_id', 'initial_role_id', 'gif_url', 'global_footer', 'cooldown_duration', 'spotify_client_token', 'spotify_client_id']
 if not all(key in config for key in required_keys):
     raise ValueError("Invalid config.json")
 
