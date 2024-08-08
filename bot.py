@@ -22,8 +22,8 @@ except json.JSONDecodeError:
 # --- Logging ---
 
 logger = logging.getLogger(__name__)
-logger.setLevel(getattr(logging, config['logging']['level']))
-file_handler = logging.FileHandler('utility/logs.txt', mode='w', encoding='utf-8')
+logger.setLevel('DEBUG')
+file_handler = logging.FileHandler('logs.txt', mode='w', encoding='utf-8')
 file_handler.setLevel(logging.DEBUG)
 file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 file_handler.setFormatter(file_formatter)
