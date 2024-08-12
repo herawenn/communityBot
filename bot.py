@@ -7,9 +7,22 @@ import discord
 from discord.ext import commands, tasks
 from itertools import cycle
 
-# Load Config
+# --- Load & Validate ---
+
 with open('config.json') as f:
     config = json.load(f)
+
+required_keys = ['discord', 'identifiers', 'settings', 'external_apis', 'embeds', 'cogs']
+for key in required_keys:
+    if key not in config:
+        raise KeyError(f"Missing required key '{key}' in config.json")
+
+discord_config = config['discord']
+identifiers_config = config['identifiers']
+settings_config = config['settings']
+external_apis_config = config['external_apis']
+embeds_config = config['embeds']
+cogs_config = config['cogs']
 
 # --- Logging ---
 
@@ -26,7 +39,7 @@ logger = logging.getLogger(__name__)
 
 intents = discord.Intents.all()
 
-bot = commands.Bot(command_prefix=config['prefix'], intents=intents, help_command=None)
+bot = commands.Bot(command_prefix=discord_config['prefix'], intents=intents, help_command=None)
 bot.config = config
 
 statuses = [
@@ -53,7 +66,7 @@ async def change_status() -> None:
 # --- Helper Functions ---
 
 async def load_cogs() -> tuple:
-    cogs_to_load = config.get('cogs', [])
+    cogs_to_load = cogs_config
     loaded_cogs = []
     missing_cogs = []
     loaded_extensions = set(bot.extensions.keys())
@@ -102,13 +115,13 @@ async def on_ready() -> None:
         G = '\033[92m'
         X = '\033[0m'
         loaded_cogs, missing_cogs = await load_cogs()
-        total_cogs = config.get('cogs', [])
+        total_cogs = cogs_config
 
         change_status.start()
 
         print(f"[{G}!{X}] Logged in as: {G}{bot.user.name}{X}")
         print(f"[{G}!{X}] Discord ID: {G}{bot.user.id}{X}")
-        print(f"[{G}!{X}] Bot Version: {G}{config['botVersion']}{X}")
+        print(f"[{G}!{X}] Bot Version: {G}{discord_config['version']}{X}")
         print(f"[{G}!{X}] Discord.py Version: {G}{discord.__version__}{X}")
         print(f"[{G}!{X}] Commands: {G}{len(loaded_cogs)}/{len(total_cogs)}{X}")
         if missing_cogs:
@@ -117,8 +130,15 @@ async def on_ready() -> None:
     except Exception as ex:
         logger.error(f"An error occurred during bot startup: {ex}", exc_info=True)
 
+@bot.event
+async def on_command_error(ctx: commands.Context, error: commands.CommandError) -> None:
+    if isinstance(error, commands.CommandNotFound):
+        return
+    logger.error(f"Command error: {error}", exc_info=True)
+    await ctx.send("An error occurred while executing the command.")
 
 # -- Commands ---
+
 @bot.command(name='reload_cogs', hidden=True)
 @commands.is_owner()
 async def reload_cogs_command(ctx: commands.Context) -> None:
@@ -127,7 +147,7 @@ async def reload_cogs_command(ctx: commands.Context) -> None:
 
 async def main() -> None:
     try:
-        await bot.start(config['token'])
+        await bot.start(discord_config['token'])
     except Exception as ex:
         logger.error(f"An error occurred during bot startup: {ex}", exc_info=True)
 
