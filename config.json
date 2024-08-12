@@ -1,19 +1,39 @@
 {
-  "token": "",
-  "botVersion": "",
-  "prefix": "",
-  "owner_id": "",
-  "server_id": "",
-  "admin_id": "",
-  "gif_url": "",
-  "global_footer": "",
-  "delete_commands": "",
-  "delete_command_delay": "",
-  "password_file": "",
-  "spotify_client_token": "",
-  "spotify_client_id": "",
-  "logging": {
-    "level": ""
+  "discord": {
+    "token": "",
+    "version": "",
+    "prefix": ""
+  },
+  "identifiers": {
+    "owner_id": "",
+    "server_id": "",
+    "admin_id": "",
+    "obf_channel_id": ""
+  },
+  "settings": {
+    "delete_commands": "",
+    "delete_command_delay": "",
+    "password_file": ""
+  },
+  "external_apis": {
+    "mistral": {
+      "api_url": "",
+      "api_key": "",
+      "prompt": "",
+      "model": "",
+      "temperature": ""
+    },
+    "shodan": {
+      "api_key": ""
+    }
+  },
+  "embeds": {
+    "embed_banner": "",
+    "embed_footer": "",
+    "embed_colors": {
+      "primary": "",
+      "secondary": ""
+    }
   },
   "cogs": []
 }
