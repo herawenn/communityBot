@@ -8,14 +8,24 @@
     "owner_id": "",
     "server_id": "",
     "admin_id": "",
-    "obf_channel_id": ""
+    "obf_channel_id": "",
+    "exploit_channel_id": "",
+    "ai_channel_id": ""
   },
-  "settings": {
-    "delete_commands": "",
-    "delete_command_delay": "",
-    "password_file": ""
+  "paths": {
+    "password_list_path": "",
+    "exploit_path": "",
+    "root_directory": ""
   },
-  "external_apis": {
+  "embeds": {
+    "embed_banner": "",
+    "embed_footer": "",
+    "embed_colors": {
+      "primary": "",
+      "secondary": ""
+    }
+  },
+  "apis": {
     "mistral": {
       "api_url": "",
       "api_key": "",
@@ -27,13 +37,9 @@
       "api_key": ""
     }
   },
-  "embeds": {
-    "embed_banner": "",
-    "embed_footer": "",
-    "embed_colors": {
-      "primary": "",
-      "secondary": ""
-    }
-  },
-  "cogs": []
+  "settings": {
+    "rate_limit": "",
+    "delete_commands": "",
+    "delete_command_delay": ""
+  }
 }
