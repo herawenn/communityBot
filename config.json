@@ -21,25 +21,22 @@
     "embed_banner": "",
     "embed_footer": "",
     "embed_colors": {
-      "primary": "",
-      "secondary": ""
+      "primary": ""
     }
   },
   "apis": {
-    "mistral": {
-      "api_url": "",
+    "gemini": {
       "api_key": "",
       "prompt": "",
-      "model": "",
-      "temperature": ""
-    },
-    "shodan": {
-      "api_key": ""
+      "temperature": "",
+      "model": ""
     }
   },
   "settings": {
     "rate_limit": "",
     "delete_commands": "",
-    "delete_command_delay": ""
+    "delete_command_delay": "",
+    "delete_responses": "",
+    "delete_response_delay": ""
   }
 }
