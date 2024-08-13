@@ -8,9 +8,13 @@
     "owner_id": "",
     "server_id": "",
     "admin_id": "",
+    "verified_role_id": "",
+    "unverified_role_id": "",
     "obf_channel_id": "",
     "exploit_channel_id": "",
-    "ai_channel_id": ""
+    "ai_channel_id": "",
+    "shodan_channel_id": "",
+    "verification_channel_id": ""
   },
   "paths": {
     "password_list_path": "",
@@ -30,6 +34,9 @@
       "prompt": "",
       "temperature": "",
       "model": ""
+    },
+    "shodan": {
+      "api_key": ""
     }
   },
   "settings": {
