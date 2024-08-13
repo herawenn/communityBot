@@ -29,6 +29,9 @@ def load_config(config_path: str) -> dict:
     return config
 
 config = load_config(CONFIG_PATH)
+if config is None:
+    raise Exception("Failed to load configuration")
+
 api_key = config['apis']['gemini']['api_key']
 DISCORD_CONFIG = config['discord']
 IDENTIFIERS_CONFIG = config['identifiers']
@@ -81,8 +84,10 @@ async def change_status() -> None:
     try:
         activity_type, status_message = next(status_cycle)
         await bot.change_presence(activity=discord.Activity(type=activity_type, name=status_message))
-    except Exception as e:
+    except discord.HTTPException as e:
         logger.error(f"Failed to change status: {e}")
+    except Exception as e:
+        logger.error(f"An unexpected error occurred: {e}")
 
 # --- Cog Loading ---
 
@@ -100,8 +105,14 @@ async def load_cogs() -> Tuple[List[str], List[str]]:
                     logger.info(f"Loaded cog: {cog_name}")
                 else:
                     logger.info(f"Cog {cog_name} is already loaded.")
-            except Exception as e:
+            except commands.ExtensionNotFound:
+                logger.error(f"Failed to load cog {cog_name}: Not found")
+                missing_cogs.append(cog_name)
+            except commands.ExtensionFailed as e:
                 logger.error(f"Failed to load cog {cog_name}: {e}")
+                missing_cogs.append(cog_name)
+            except Exception as e:
+                logger.error(f"An unexpected error occurred while loading cog {cog_name}: {e}")
                 missing_cogs.append(cog_name)
 
     return loaded_cogs, missing_cogs
@@ -116,9 +127,13 @@ async def on_error(event: str, *args, **kwargs) -> None:
 async def on_command_error(ctx: commands.Context, error: commands.CommandError) -> None:
     if isinstance(error, commands.CommandNotFound):
         return
-
-    logger.error(f"Command error: {error}", exc_info=True)
-    await ctx.send("An error occurred. Please try again later.")
+    elif isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send("Please provide all required arguments.")
+    elif isinstance(error, commands.BadArgument):
+        await ctx.send("Invalid argument. Please try again.")
+    else:
+        logger.error(f"Command error: {error}", exc_info=True)
+        await ctx.send("An error occurred. Please try again later.")
 
 @bot.event
 async def on_ready() -> None:
@@ -154,8 +169,10 @@ async def on_command(ctx: commands.Context) -> None:
         try:
             await ctx.message.delete()
             logger.info(f"Deleted command message: {ctx.message.content}")
-        except Exception as e:
+        except discord.HTTPException as e:
             logger.error(f"Failed to delete command message: {ctx.message.content}, Error: {e}")
+        except Exception as e:
+            logger.error(f"An unexpected error occurred while deleting command message: {e}")
 
 # --- Bot Commands ---
 
@@ -175,13 +192,21 @@ async def reload(ctx: commands.Context, cog: str = None) -> None:
                 await bot.load_extension(cog)
             await ctx.send("`Reloaded all cogs.`")
             logger.info("Reloaded all cogs.")
-    except Exception as e:
-        await ctx.send(f"`Failed to reload cog {cog}`: `{e}`")
+    except commands.ExtensionNotFound:
+        await ctx.send(f"`Failed to reload cog {cog}`: Not found")
+        logger.error(f"Failed to reload cog {cog}: Not found")
+    except commands.ExtensionFailed as e:
+        await ctx.send(f"`Failed to reload cog {cog}`: {e}")
         logger.error(f"Failed to reload cog {cog}: {e}", exc_info=True)
+    except Exception as e:
+        await ctx.send(f"`Failed to reload cog {cog}`: {e}")
+        logger.error(f"An unexpected error occurred while reloading cog {cog}: {e}", exc_info=True)
 
 async def main() -> None:
     try:
         await bot.start(DISCORD_CONFIG['token'])
+    except discord.HTTPException as e:
+        logger.error(f"Failed to start bot: {e}")
     except Exception as ex:
         logger.error(f"An error occurred during bot startup: {ex}", exc_info=True)
 
