@@ -1,0 +1,1 @@
+attachments directory used as temporary storage during obfuscation. it has to be here.
