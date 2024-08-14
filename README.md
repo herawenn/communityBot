@@ -154,7 +154,7 @@ Here's a list of features and enhancements planned for future versions of the bo
 
 ### Support:
 
-For questions, support, or to report issues, please join the (PortLords Discord Server)[https://discord.gg/portlords]
+For questions, support, or to report issues, please join the [PortLords Discord Server](https://discord.gg/portlords)
 
 ### Disclaimer:
 
