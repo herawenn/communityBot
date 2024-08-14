@@ -102,13 +102,13 @@ Below is a categorized list of all the commands available within the PortLords D
 The PortLordsAI model, powered by Google Gemini, introduces conversational AI capabilities to the bot. You can engage with PortLordsAI using the `!chat` command. It can assist with tasks such as: 
 
 *   **Code Generation & Assistance:**  Request code snippets or get help with debugging. 
-*   **Vulnerability Assessments:**  Use the `!aiscan` command to request a vulnerability assessment. Keep in mind *this is a high-level assessment.*
+*   **Vulnerability Assessments:**  Use the `!aiscan` command to request a vulnerability assessment. Keep in mind this is a *high-level assessment.*
 *   **General Knowledge:** Ask general cybersecurity questions or get definitions.
 
 **Important Considerations:**
 
 *   **Limitations:** The AI model has limitations. Its responses might not always be perfect or suitable for production use. Always double-check its outputs.
-*   **Biases:** AI models are trained on vast datasets and can reflect biases present in those datasets.  Be aware that responses are subjective. 
+*   **Biases:** AI models are trained on vast datasets and can reflect biases present in those datasets. Be aware that responses are not always objective. 
 
 ### B. Exploit Database Management
 
