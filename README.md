@@ -45,55 +45,50 @@ Below is a categorized list of all the commands available within the PortLords D
 
 ### A. Security Commands
 
-| Command              | Description                                             | Usage                                      |
-| :------------------- | :------------------------------------------------------ | :----------------------------------------- |
-| `!brute`             | Attempts to brute-force a service on an IP address.     | `!brute <ip_address> <port> <service>`     |
-| `!brutehelp`         | Displays help information for the `!brute` command.     | `!brutehelp`                               |
-| `!cancelscan`        | Cancels ongoing brute force scans.                      | `!cancelscan`                              |
-| `!categories`        | Lists available exploit categories from ExploitDB.      | `!categories`                              |
-| `!exploits`          | Searches for exploits in ExploitDB using a keyword.     | `!exploits <keyword>`                      |
-| `!download`          | Downloads an exploit by its ID from ExploitDB.          | `!download <exploit_id>`                   |
-| `!shodanhost`        | Gets detailed information about a host from Shodan.     | `!shodanhost <ip_address>`                 |
-| `!shodanhelp`        | Displays help information for the Shodan commands.      | `!shodanhelp`                              |
-| `!shodansearch`      | Performs a Shodan search using a given query.           | `!shodansearch <query>`                    |
-| `!shodanscan`        | Initiates a Shodan scan on a specific IP.               | `!shodanscan <ip_address>`                 |
-| `!shodanscanstatus`  | Checks the status of a Shodan scan by ID.               | `!shodanscanstatus <scan_id>`              |
-| `!shodanscanresults` | Retrieves the results of a completed Shodan scan.       | `!shodanscanresults <scan_id>`             |
+| Command             | Description                                             | Usage                                     |
+| :------------------ | :------------------------------------------------------ | :---------------------------------------- |
+| `brute`             | Attempts to brute-force a service on an IP address.     | `brute <ip_address> <port> <service>`     |
+| `brutehelp`         | Displays help information for the `brute` command.      | `brutehelp`                               |
+| `categories`        | Lists available exploit categories from ExploitDB.      | `categories`                              |
+| `exploits`          | Searches for exploits in ExploitDB using a keyword.     | `exploits <keyword>`                      |
+| `download`          | Downloads an exploit by its ID from ExploitDB.          | `download <exploit_id>`                   |
+| `shodanhost`        | Gets detailed information about a host from Shodan.     | `shodanhost <ip_address>`                 |
+| `shodanhelp`        | Displays help information for the Shodan commands.      | `shodanhelp`                              |
+| `shodansearch`      | Performs a Shodan search using a given query.           | `shodansearch <query>`                    |
+| `shodanscan`        | Initiates a Shodan scan on a specific IP.               | `shodanscan <ip_address>`                 |
+| `shodanscanstatus`  | Checks the status of a Shodan scan by ID.               | `shodanscanstatus <scan_id>`              |
+| `shodanscanresults` | Retrieves the results of a completed Shodan scan.       | `shodanscanresults <scan_id>`             |
+| `cancelscan`        | Cancels ongoing brute force scans.                      | `cancelscan`                              |
 
 ### B. Moderation Commands:
 
-| Command      | Description                                      | Usage                                  |
-| :----------- | :----------------------------------------------- | :------------------------------------- |
-| `!kick`      | Kicks a user from the server.                    | `!kick <user> [reason]`                |
-| `!ban`       | Bans a user from the server.                     | `!ban <user> [reason]`                 |
-| `!unban`     | Unbans a user from the server.                   | `!unban <user#discriminator>`          |
-| `!mute`      | Mutes a user in the server.                      | `!mute <user> [reason]`                |
-| `!unmute`    | Unmutes a user in the server.                    | `!unmute <user> [reason]`              |
-| `!clear`     | Deletes a specified number of messages.          | `!clear <amount>`                      |
-| `!warn`      | Issues a warning to a user.                      | `!warn <user> [reason]`                |
+| Command     | Description                                      | Usage                                 |
+| :---------- | :----------------------------------------------- | :------------------------------------ |
+| `kick`      | Kicks a user from the server.                    | `kick <user> [reason]`                |
+| `ban`       | Bans a user from the server.                     | `ban <user> [reason]`                 |
+| `unban`     | Unbans a user from the server.                   | `unban <user#discriminator>`          |
+| `mute`      | Mutes a user in the server.                      | `mute <user> [reason]`                |
+| `unmute`    | Unmutes a user in the server.                    | `unmute <user> [reason]`              |
+| `clear`     | Deletes a specified number of messages.          | `clear <amount>`                      |
+| `warn`      | Issues a warning to a user.                      | `warn <user> [reason]`                |
 
 ### C. Tools Commands:
 
 | Command      | Description                                              | Usage                                       |
 | :----------- | :------------------------------------------------------- | :------------------------------------------ |
-| `!obfuscate` | Obfuscates the source code of an attached file.          | `!obfuscate` (attach the file to obfuscate) |
-| `!crack`     | Attempts to crack a provided hash.                       | `!crack <hash> [hash_type]`                 |
-| `!phish`     | \[Incomplete/Potentially Dangerous].                     |                                             |
-
-### D. Support Commands:
-
-| Command | Description                                                                     | Usage              |
-| :------- | :----------------------------------------------------------------------------- | :----------------- |
-| `!chat`  | Interacts with PortLordsAI (powered by Google Gemini).                         | `!chat <message>`  |
-| `!help`  | Displays a help menu providing an overview of the bot's commands.              | `!help`            |
+| `bomber`     | Sends spam to a target ip address.                       | `bomber <ip_address> <number_of_emails>`    |
+| `obfuscate`  | Obfuscates the source code of an attached file.          | `obfuscate` (attach the file to obfuscate)  |
+| `crack`      | Attempts to crack a provided hash.                       | `crack <hash> [hash_type]`                  |
+| `chat`       | Interacts with PortLordsAI (powered by Google Gemini).   | `chat <message>`                            |
+| `aiscan`     | Generates a vulnerability report for a given ip.         | `aiscan <ip_address>`                       |
 
 ### E. Admin Commands:
 
-| Command         | Description                                                         | Usage                  |
-| :-------------- | :------------------------------------------------------------------ | :--------------------- |
-| `!embeds`       | Triggers specific embed messages for designated channels.           | `!embeds <embed_name>` |
-| `!verification` | Manages user verification and role assignment.                      | `!verification`        |
-| `!reload`       | Reloads all cogs (extensions) or a specific cog.                    | `!reload [cog_name]`   |
+| Command        | Description                                                         | Usage                 |
+| :------------- | :------------------------------------------------------------------ | :-------------------- |
+| `help`         | Displays an overview of the bots commands.                          | `help`                |
+| `verification` | Manages user verification and role assignment.                      | `verification`        |
+| `reload`       | Reloads all cogs (extensions) or a specific cog.                    | `reload [cog_name]`   |
 
 ## IV. Advanced Features
 
