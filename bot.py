@@ -20,7 +20,7 @@ def load_config(config_path: str) -> dict:
         logging.error(f"Failed to load configuration file: {e}")
         return None
 
-    required_keys = ['discord', 'identifiers', 'paths','settings', 'apis', 'embeds']
+    required_keys = ['discord', 'identifiers', 'paths', 'settings', 'apis', 'embeds']
     for key in required_keys:
         if key not in config:
             logging.error(f"Missing required key '{key}' in {config_path}")
@@ -66,14 +66,9 @@ bot.config = config
 # --- Helper Functions ---
 
 STATUSES = [
-    (discord.ActivityType.watching, "Hated 🤓 Code"),
-    (discord.ActivityType.watching, "the 🚄 pass"),
-    (discord.ActivityType.playing, "🌙 Lun Client"),
-    (discord.ActivityType.watching, "for The FEDs"),
-    (discord.ActivityType.playing, "Leggo my Eggo 🧇"),
-    (discord.ActivityType.watching, "🚀 Above and Beyond"),
-    (discord.ActivityType.watching, "🗺️ it spread"),
-    (discord.ActivityType.playing, "w Herawens 💔")
+    (discord.ActivityType.playing, "custom status 1"),
+    (discord.ActivityType.watching, "custom status 2"),
+    (discord.ActivityType.watching, "custom status 3"),
 ]
 status_cycle = cycle(STATUSES)
 
@@ -96,7 +91,7 @@ async def load_cogs() -> Tuple[List[str], List[str]]:
     missing_cogs = []
 
     for filename in os.listdir("./cogs"):
-        if filename.endswith(".py") and filename!= "__init__.py":
+        if filename.endswith(".py") and filename != "__init__.py":
             cog_name = f"cogs.{filename[:-3]}"
             try:
                 if cog_name not in bot.extensions:
@@ -125,15 +120,29 @@ async def on_error(event: str, *args, **kwargs) -> None:
 
 @bot.event
 async def on_command_error(ctx: commands.Context, error: commands.CommandError) -> None:
-    if isinstance(error, commands.CommandNotFound):
-        return
-    elif isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("Please provide all required arguments.")
-    elif isinstance(error, commands.BadArgument):
-        await ctx.send("Invalid argument. Please try again.")
-    else:
-        logger.error(f"Command error: {error}", exc_info=True)
-        await ctx.send("An error occurred. Please try again later.")
+    try:
+        if isinstance(error, commands.CommandNotFound):
+            return
+        elif isinstance(error, commands.MissingRequiredArgument):
+            await ctx.send("Please provide all required arguments.")
+        elif isinstance(error, commands.BadArgument):
+            await ctx.send("Invalid argument. Please try again.")
+        else:
+            logger.error(f"Command error: {error}", exc_info=True)
+            await ctx.send("An error occurred. Please try again later.")
+
+        if SETTINGS_CONFIG['delete_errors']:
+            logger.info(f"Scheduling deletion of error message: {ctx.message.content}")
+            await asyncio.sleep(SETTINGS_CONFIG['delete_errors_delay'])
+            try:
+                await ctx.message.delete()
+                logger.info(f"Deleted error message: {ctx.message.content}")
+            except discord.HTTPException as e:
+                logger.error(f"Failed to delete error message: {ctx.message.content}, Error: {e}")
+            except Exception as e:
+                logger.error(f"An unexpected error occurred while deleting error message: {e}")
+    except Exception as e:
+        logger.error(f"An unexpected error occurred in on_command_error: {e}", exc_info=True)
 
 @bot.event
 async def on_ready() -> None:
@@ -163,16 +172,19 @@ async def on_ready() -> None:
 
 @bot.event
 async def on_command(ctx: commands.Context) -> None:
-    if SETTINGS_CONFIG['delete_commands']:
-        logger.info(f"Scheduling deletion of command message: {ctx.message.content}")
-        await asyncio.sleep(SETTINGS_CONFIG['delete_command_delay'])
-        try:
-            await ctx.message.delete()
-            logger.info(f"Deleted command message: {ctx.message.content}")
-        except discord.HTTPException as e:
-            logger.error(f"Failed to delete command message: {ctx.message.content}, Error: {e}")
-        except Exception as e:
-            logger.error(f"An unexpected error occurred while deleting command message: {e}")
+    try:
+        if SETTINGS_CONFIG['delete_commands']:
+            logger.info(f"Scheduling deletion of command message: {ctx.message.content}")
+            await asyncio.sleep(SETTINGS_CONFIG['delete_command_delay'])
+            try:
+                await ctx.message.delete()
+                logger.info(f"Deleted command message: {ctx.message.content}")
+            except discord.HTTPException as e:
+                logger.error(f"Failed to delete command message: {ctx.message.content}, Error: {e}")
+            except Exception as e:
+                logger.error(f"An unexpected error occurred while deleting command message: {e}")
+    except Exception as e:
+        logger.error(f"An unexpected error occurred in on_command: {e}", exc_info=True)
 
 # --- Bot Commands ---
 
@@ -192,6 +204,17 @@ async def reload(ctx: commands.Context, cog: str = None) -> None:
                 await bot.load_extension(cog)
             await ctx.send("`Reloaded all cogs.`")
             logger.info("Reloaded all cogs.")
+
+        if SETTINGS_CONFIG['delete_responses']:
+            logger.info(f"Scheduling deletion of response message: {ctx.message.content}")
+            await asyncio.sleep(SETTINGS_CONFIG['delete_response_delay'])
+            try:
+                await ctx.message.delete()
+                logger.info(f"Deleted response message: {ctx.message.content}")
+            except discord.HTTPException as e:
+                logger.error(f"Failed to delete response message: {ctx.message.content}, Error: {e}")
+            except Exception as e:
+                logger.error(f"An unexpected error occurred while deleting response message: {e}")
     except commands.ExtensionNotFound:
         await ctx.send(f"`Failed to reload cog {cog}`: Not found")
         logger.error(f"Failed to reload cog {cog}: Not found")
