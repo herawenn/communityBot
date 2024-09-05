@@ -117,37 +117,6 @@ The PortLords Discord bot is a powerful cybersecurity learning and engagement to
     "max_mentions": "",
     "first_mute_duration": "",
     "second_mute_duration": ""
-  },
-  "tiers": [
-  {
-    "tier_id": 1,
-    "name": "Beginner",
-    "role_name": "🤝 Beginner",
-    "required_points": 25
-  },
-  {
-    "tier_id": 2,
-    "name": "Enthusiast",
-    "role_name": "🌟 Enthusiast",
-    "required_points": 50
-  },
-  {
-    "tier_id": 3,
-    "name": "Professional",
-    "role_name": "📟 Professional",
-    "required_points": 100
-  },
-  {
-    "tier_id": 4,
-    "name": "Legendary",
-    "role_name": "😈 Legendary",
-    "required_points": 250
-  },
-  {
-    "tier_id": 5,
-    "name": "Anonymous",
-    "role_name": "🤍 Anonymous",
-    "required_points": 500
   }
  ]
 }
