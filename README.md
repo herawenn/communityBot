@@ -28,38 +28,129 @@ The PortLords Discord bot is a powerful cybersecurity learning and engagement to
 2. **Configuration File (`config.json`):**
     * Create a `config.json` file in the root of your bot's directory with the following structure:
     ```json
-    {
-      "identifiers": {
-        "quiz_channel_id": "YOUR_QUIZ_CHANNEL_ID",
-        "welcome_channel_id": "YOUR_WELCOME_CHANNEL_ID"
-      },
-      "paths": {
-        "database_path": "path/to/your/database.db"
-      },
-      "settings": {
-        "delete_commands": true,
-        "delete_command_delay": 5,
-        "delete_responses": true,
-        "delete_response_delay": 5,
-        "delete_errors": true,
-        "delete_errors_delay": 5,
-        "quiz_task_enabled": true,
-        "use_gemini_ai": true 
-      },
-      "embeds": {
-        "embed_colors": {
-          "primary": "#007bff",
-          "success": "#28a745",
-          "error": "#dc3545"
-        },
-        "embed_footer": "PortLords AI",
-        "embed_banner": "https://example.com/banner.png" // Optional banner image
-      },
-      "apis": {
-        "dehashed_api_key": "YOUR_DEHASHED_API_KEY",
-        "gemini_api_key": "YOUR_GEMINI_API_KEY" // Optional if using Gemini AI
-      }
+{
+  "discord": {
+    "version": "",
+    "prefix": ""
+  },
+  "identifiers": {
+    "owner_id": "",
+    "server_id": "",
+    "admin_id": "",
+    "muted_id": "",
+    "verified_role_id": "",
+    "unverified_role_id": "",
+    "beginner_role_id": "",
+    "intermediate_role_id": "",
+    "advanced_role_id": "",
+    "networking_role_id": "",
+    "websecurity_role_id": "",
+    "reversing_role_id": "",
+    "pentesting_role_id": "",
+    "alerts_role_id": "",
+    "verification_channel_id": "",
+    "logging_channel_id": "",
+    "security_channel_id": "",
+    "audit_channel_id": "",
+    "botspam_channel_id": "",
+    "quiz_channel_id": "",
+    "report_channel_id": "",
+    "react_channel_id": "",
+    "crawler_channel_id": "",
+    "news_channel_id": ""
+  },
+  "paths": {
+    "cogs_directory": "",
+    "root_directory": "",
+    "exploit_path": "",
+    "exploit_file": "",
+    "database_path": "",
+    "tips_file_path": "",
+    "links_file_path": "",
+    "brokers_file_path": "",
+    "removal_file_path": ""
+  },
+  "embeds": {
+    "embed_banner": "",
+    "embed_footer": "",
+    "embed_colors": {
+      "primary": "",
+      "success": "",
+      "error": ""
     }
+  },
+  "apis": {
+    "gemini": {
+      "chat_prompt": "",
+      "aiscan_prompt": "",
+      "temperature": "",
+      "model": ""
+    },
+    "shodan": {
+    },
+    "dehashed": {
+      "results_limit": ""
+    },
+    "proxy_api": ""
+  },
+  "settings": {
+    "rate_limit": "",
+    "delete_commands": "",
+    "delete_command_delay": "",
+    "delete_responses": "",
+    "delete_response_delay": "",
+    "delete_errors": "",
+    "delete_errors_delay": "",
+    "quiz_task_enabled": ""
+  },
+  "logging": {
+    "log_path": "",
+    "log_file_name": "",
+    "log_level": ""
+  },
+  "moderation": {
+    "spam_threshold": "",
+    "spam_message_count": "",
+    "wall_of_text_length": "",
+    "max_emojis": "",
+    "max_attachments": "",
+    "max_mentions": "",
+    "first_mute_duration": "",
+    "second_mute_duration": ""
+  },
+  "tiers": [
+  {
+    "tier_id": 1,
+    "name": "Beginner",
+    "role_name": "🤝 Beginner",
+    "required_points": 25
+  },
+  {
+    "tier_id": 2,
+    "name": "Enthusiast",
+    "role_name": "🌟 Enthusiast",
+    "required_points": 50
+  },
+  {
+    "tier_id": 3,
+    "name": "Professional",
+    "role_name": "📟 Professional",
+    "required_points": 100
+  },
+  {
+    "tier_id": 4,
+    "name": "Legendary",
+    "role_name": "😈 Legendary",
+    "required_points": 250
+  },
+  {
+    "tier_id": 5,
+    "name": "Anonymous",
+    "role_name": "🤍 Anonymous",
+    "required_points": 500
+  }
+ ]
+}
     ```
     * Replace placeholders with your actual values.
 
