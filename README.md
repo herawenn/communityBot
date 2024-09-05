@@ -1,18 +1,18 @@
-# PortLords Discord Bot Documentation
+# PortLords AI - Discord Bot
 
 ## I. Introduction
 
 ### A. Bot Overview
 
-The PortLords Discord bot is a powerful cybersecurity learning and engagement tool designed to help both beginners and experienced security professionals. It offers a variety of resources and features to aid in security education, community interaction, and basic server moderation.
+PortLords AI is an advanced Discord bot meticulously crafted to empower cybersecurity enthusiasts and professionals with cutting-edge tools and knowledge. It serves as a comprehensive hub for learning, research, and community engagement, enhancing your cybersecurity journey.
 
 ### B. Core Features
 
-* **Interactive Tutorials:**  Learn practical cybersecurity skills through engaging, step-by-step tutorials for Shodan, Censys, OSINT, and ExploitDB.
-* **Cybersecurity Quizzes:**  Test your knowledge with daily quizzes covering various security concepts. Earn points and level up to unlock exclusive benefits.
-* **Community Engagement:**  Connect with other cybersecurity enthusiasts, share knowledge, and participate in fun community activities.
-* **Server Moderation:**  Basic moderation commands to help manage your server, including kicking, muting, and clearing messages. 
-* **User Management:**  The bot tracks user information, points, and tiers to foster a rewarding learning experience.
+* **Interactive Tutorials:** Embark on hands-on learning adventures with step-by-step tutorials covering Shodan, Censys, OSINT, and ExploitDB.
+* **Cybersecurity Quizzes:** Test your expertise through engaging daily quizzes encompassing a wide array of security concepts. Accumulate points, ascend through tiers, and unlock exclusive rewards.
+* **Community Collaboration:** Connect with fellow cybersecurity aficionados, fostering a vibrant environment for knowledge exchange and collaborative learning.
+* **Server Moderation:** Maintain order and harmony within your Discord server using essential moderation commands, including kick, ban, mute, unmute, clear, and warn.
+* **User Management:** The bot meticulously tracks user information, points, and tier progression, creating a personalized and rewarding experience for every user.
 
 ## II. Getting Started
 
@@ -22,8 +22,10 @@ The PortLords Discord bot is a powerful cybersecurity learning and engagement to
     * Python 3.8 or higher (recommended: 3.9+)
     * `discord.py` library: `pip install discord.py`
     * `sqlite3` library (built-in with Python)
+    * A Shodan API key 
+    * A Censys API ID and Secret
+    * A Censys GPT API Key
     * A Dehashed API key (for OSINT searches)
-    * A Google Gemini API key (for AI interaction, optional)
 
 2. **Configuration File (`config.json`):**
     * Create a `config.json` file in the root of your bot's directory with the following structure:
@@ -40,94 +42,118 @@ The PortLords Discord bot is a powerful cybersecurity learning and engagement to
 
 | Command             | Description                                             | Usage                                     |
 | :------------------ | :------------------------------------------------------ | :---------------------------------------- |
-| `tutorial shodan`     | Guides you through the fundamentals of Shodan.       | `tutorial shodan`                          |
-| `tutorial censys`    | Introduces you to Censys and how to use it for searches. | `tutorial censys`                         |
-| `tutorial recon`     | Teaches you basic Nmap reconnaissance techniques.      | `tutorial recon`                          |
-| `tutorial osint`     |  Explains OSINT principles and uses Dehashed API for searches.    | `tutorial osint`                         | 
-| `tutorial exploitdb` |  Guides you on using the ExploitDB database for searching and downloading exploits.   | `tutorial exploitdb`                     |
+| `..tutorial shodan`     | Guides you through the fundamentals of Shodan.       | `..tutorial shodan`                          |
+| `..tutorial censys`    | Introduces you to Censys and how to use it for searches. | `..tutorial censys`                         |
+| `..tutorial recon`     | Teaches you basic Nmap reconnaissance techniques.      | `..tutorial recon`                          |
+| `..tutorial osint`     |  Explains OSINT principles and uses Dehashed API for searches.    | `..tutorial osint`                         | 
+| `..tutorial exploitdb` |  Guides you on using the ExploitDB database for searching and downloading exploits.   | `..tutorial exploitdb`                     |
 
 ### B. Quiz Commands
 
 | Command     | Description                                   | Usage                                 |
 | :---------- | :-------------------------------------------- | :------------------------------------ |
-| `quiz`      | Starts a daily cybersecurity quiz.               | `quiz`                                | 
+| `..quiz`      | Starts a daily cybersecurity quiz.               | `..quiz`                                | 
 
 ### C. Moderation Commands
 
 | Command     | Description                                   | Usage                                 |
 | :---------- | :-------------------------------------------- | :------------------------------------ |
-| `kick`      | Kicks a user from the server.                 | `kick <user> [reason]`                |
-| `ban`       | Bans a user from the server.                  | `ban <user> [reason]`                 |
-| `unban`     | Unbans a user from the server.                | `unban <user#discriminator>`          |
-| `mute`      | Mutes a user in the server.                   | `mute <user> [reason]`                |
-| `unmute`    | Unmutes a user in the server.                 | `unmute <user> [reason]`              |
-| `clear`     | Deletes a specified number of messages.       | `clear <amount>`                      |
-| `warn`      | Issues a warning to a user.                   | `warn <user> [reason]`                |
+| `..kick`      | Kicks a user from the server.                 | `..kick <user> [reason]`                |
+| `..ban`       | Bans a user from the server.                  | `..ban <user> [reason]`                 |
+| `..unban`     | Unbans a user from the server.                | `..unban <user#discriminator>`          |
+| `..mute`      | Mutes a user in the server.                   | `..mute <user> [reason]`                |
+| `..unmute`    | Unmutes a user in the server.                 | `..unmute <user> [reason]`              |
+| `..clear`     | Deletes a specified number of messages.       | `..clear <amount>`                      |
+| `..warn`      | Issues a warning to a user.                   | `..warn <user> [reason]`                |
 
 ### D. OSINT Commands
 
 | Command  | Description                                             | Usage                         |
 | :------- | :------------------------------------------------------ | :---------------------------- |
-| `search` | Searches for leaked data using the Dehashed API.        | `search <query_type> <query>` |
-| `footprint` |  Searches your digital footprint online.             | `footprint <username>`        | 
-| `removeaccount` | Provides instructions for removing accounts.     | `removeaccount <platform>`    |
-| `deindex` |  Guides you on de-indexing information from Google.    | `deindex`                     |
+| `..search` | Searches for leaked data using the Dehashed API.        | `..search <query_type> <query>` |
+| `..footprint` |  Searches your digital footprint online.             | `..footprint <username>`        | 
+| `..removeaccount` | Provides instructions for removing accounts.     | `..removeaccount <platform>`    |
+| `..databreach` | Check if an email has been involved in data breaches. | `..databreach <email>`         |
+| `..privacytips` | Provide privacy tips and best practices.       | `..privacytips`                   |
 
 ### E. Community Commands
 
 | Command      | Description                                 | Usage                                 |
 | :----------- | :------------------------------------------ | :------------------------------------ |
-| `ping`       | Checks the bot's latency.                   | `ping`                                |
-| `joke`       | Tells a developer joke.                     | `joke`                                |
-| `dice`       | Rolls a 6-sided dice.                       | `dice`                                |
-| `8ball`      | Asks the Magic 8 Ball a question.           | `8ball <question>`                    |
-| `coinflip`   | Flips a coin.                               | `coinflip`                            |
-| `remind`     | Sets a reminder.                            | `remind <time> <message>`             |
-| `userinfo`   | Gets information about a user.              | `userinfo [member]`                   |
-| `serverinfo` | Gets information about the server.          | `serverinfo`                          |
+| `..ping`       | Checks the bot's latency.                   | `..ping`                                |
+| `..joke`       | Tells a developer joke.                     | `..joke`                                |
+| `..dice`       | Rolls a 6-sided dice.                       | `..dice`                                |
+| `..8ball`      | Asks the Magic 8 Ball a question.           | `..8ball <question>`                    |
+| `..coinflip`   | Flips a coin.                               | `..coinflip`                            |
+| `..remind`     | Sets a reminder.                            | `..remind <time> <message>`             |
+| `..userinfo`   | Gets information about a user.              | `..userinfo [member]`                   |
+| `..serverinfo` | Gets information about the server.          | `..serverinfo`                          |
 
 ### F. Admin Commands
 
 | Command        | Description                                               | Usage                 |
 | :------------- | :-------------------------------------------------------- | :-------------------- |
-| `help`         | Displays an overview of the bot's commands.               | `help`                |
-| `reload`       | Reloads all cogs (extensions) or a specific cog.          | `reload [cog_name]`   |
-| `adduser`    |  Adds a user to the database.                               | `adduser <user_id> <username>`                         |
-| `getuser`     | Retrieves information about a user.                        | `getuser <user_id>`                                    | 
-| `updateuserpoints` | Updates a user's points in the database.              | `updateuserpoints <user_id> <points>`                  |
-| `updateusertier` | Updates a user's tier in the database.                  | `updateusertier <user_id> <tier>`                      |
-| `updateuserverified` | Updates a user's verified status.                   | `updateuserverified <user_id> true/false`              | 
-| `updateusermuteduntil` | Updates a user's muted timestamp.                 | `updateusermuteduntil <user_id> <YYYY-MM-DD HH:MM:SS>` |
-| `updateuserbanreason` | Updates a user's ban reason.                       | `updateuserbanreason <user_id> <reason>`               |
-| `updateuserwarncount` | Updates a user's warn count.                       | `updateuserwarncount <user_id> <warn_count>`           | 
+| `..help`         | Displays an overview of the bot's commands.               | `..help`                |
+| `..reload`       | Reloads all cogs (extensions) or a specific cog.          | `..reload [cog_name]`   |
+| `..adduser`    |  Adds a user to the database.                               | `..adduser <user_id> <username>`                         |
+| `..getuser`     | Retrieves information about a user.                        | `..getuser <user_id>`                                    | 
+| `..userpoints` | Updates a user's points in the database.              | `..userpoints <user_id> <points>`                  |
+| `..usertier` | Updates a user's tier in the database.                  | `..usertier <user_id> <tier>`                      |
 
-## IV. Advanced Features
+### G. AI Commands
 
-### A. AI Integration (PortLordsAI - Optional)
+| Command             | Description                                             | Usage                                     |
+| :------------------ | :------------------------------------------------------ | :---------------------------------------- |
+| `..aiscan`     | Request a vulnerability assessment report for a given IP Address.       | `..aiscan <IP Address>`                          |
+| `..chat`    | Engage in a conversation with PortLords AI. | `..chat <message>`                         |
 
-PortLordsAI, powered by Google Gemini (optional), adds conversational AI capabilities to the bot. Interact with it using the `!chat` command. 
+### H. Shodan Commands
 
-**Key Features:**
+| Command             | Description                                             | Usage                                     |
+| :------------------ | :------------------------------------------------------ | :---------------------------------------- |
+| `..shodanhost`     | View detailed information about a specific host on Shodan.       | `..shodanhost <IP Address>`                          |
+| `..shodansearch`    | Conduct a search on Shodan using a given query. | `..shodansearch <query>`                         |
+| `..shodanscan`     | Initiate a vulnerability scan of a specified target on Shodan.      | `..shodanscan <IP Address>`                          |
+| `..shodanscanstatus`     | Retrieve the current status of a previously initiated Shodan scan.       | `..shodanscanstatus <scan_id>`                          | 
+| `..shodanscanresults` | Retrieve the results of a completed Shodan scan.   | `..shodanscanresults <scan_id>`                     |
+| `..shodanhelp` | Displays help for the available Shodan commands.   | `..shodanhelp`                     |
 
-* **Cybersecurity Knowledge:** Ask questions about cybersecurity concepts or request definitions.
+### I. Censys Commands
 
-**Important Considerations:**
+| Command             | Description                                             | Usage                                     |
+| :------------------ | :------------------------------------------------------ | :---------------------------------------- |
+| `..censyshost`     | View detailed information about a specific host on Censys.       | `..censyshost <IP Address>`                          |
+| `..censyssearch`    | Conduct a search on Censys using a custom query. | `..censyssearch <query>`                         |
+| `..ask`    | Ask Censys GPT for a search query suggestion. | `..ask <question>`                         |
 
-* **API Key:** Ensure you have a valid Google Gemini API key configured in your `config.json` file.
-* **Limitations:** The AI model has limitations, and its responses might not always be perfect or suitable for production use. Always double-check its outputs.
-* **Biases:** AI models are trained on vast datasets and can reflect biases present in those datasets. Be aware that responses are not always objective.
+### J. Exploit-DB Commands
 
-### B. Dehashed Integration
+| Command             | Description                                             | Usage                                     |
+| :------------------ | :------------------------------------------------------ | :---------------------------------------- |
+| `..categories`     | Display the available exploit categories on Exploit-DB.       | `..categories`                          |
+| `..exploits`    | Search for exploits based on a specific keyword. | `..exploits <keyword>`                         |
+| `..download`     | Download an exploit using its ID.      | `..download <exploit_id>`                          |
 
-The bot enables you to search for leaked data using the Dehashed API through the `!search` command. Provide the query type (e.g., 'email', 'username', 'password') and your query to retrieve related information. 
+### K. Fullz Commands
 
-## V. Development & Support
+| Command     | Description                                   | Usage                                 |
+| :---------- | :-------------------------------------------- | :------------------------------------ |
+| `..fullz`      | Generates a random set of realistic person data.               | `..fullz`                                | 
+
+### L. Other Commands
+
+| Command             | Description                                             | Usage                                     |
+| :------------------ | :------------------------------------------------------ | :---------------------------------------- |
+| `..obfuscate`     | Obfuscates provided code.      | `..obfuscate <file>`                          |
+| `..proxy`    | Retrieves proxies from the proxyscrape API. | `..proxy`                         |
+
+## IV. Development & Support
 
 ### A. To-Do List
 
-* **[High Priority]**  Investigate using the AI for basic malware analysis (e.g., identifying potentially malicious strings in code).
-* **[Medium Priority]** Expand the AI to include more features like generating security scripts. 
-* **[Low Priority]**  Create a web-based dashboard for managing the bot, viewing logs, and potentially controlling some functionalities remotely.
+* **[High Priority]** Enhance PortLords AI's capabilities for static code analysis, identifying potential vulnerabilities in user-submitted code.
+* **[Medium Priority]** Expand the scope of interactive tutorials to include advanced topics such as cryptography, network security, and penetration testing.
+* **[Low Priority]** Develop a web-based dashboard for centralized bot management, log visualization, and remote control functionality.
 
 **Note:** Priorities are subject to change based on user feedback and development progress.
 
