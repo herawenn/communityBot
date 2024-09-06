@@ -1,0 +1,148 @@
+[
+    {
+        "name": "Whitepages",
+        "link": "https://www.whitepages.com/suppression_requests",
+        "method": "POST",
+        "form_data": {
+            "firstName": "{{first_name}}",
+            "lastName": "{{last_name}}",
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "Spokeo",
+        "link": "https://www.spokeo.com/optout",
+        "method": "GET",
+        "form_data": {
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "BeenVerified",
+        "link": "https://www.beenverified.com/f/optout/search",
+        "method": "GET",
+        "form_data": {
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "PeopleFinders",
+        "link": "https://www.peoplefinders.com/opt-out",
+        "method": "POST",
+        "form_data": {
+            "firstName": "{{first_name}}",
+            "lastName": "{{last_name}}",
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "Intelius",
+        "link": "https://www.intelius.com/opt-out",
+        "method": "POST",
+        "form_data": {
+            "firstName": "{{first_name}}",
+            "lastName": "{{last_name}}",
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "US Search",
+        "link": "https://www.ussearch.com/optout",
+        "method": "POST",
+        "form_data": {
+            "firstName": "{{first_name}}",
+            "lastName": "{{last_name}}",
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "Radaris",
+        "link": "https://radaris.com/control/privacy",
+        "method": "POST",
+        "form_data": {
+            "firstName": "{{first_name}}",
+            "lastName": "{{last_name}}",
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "PeekYou",
+        "link": "https://www.peekyou.com/about/contact/optout/",
+        "method": "POST",
+        "form_data": {
+            "firstName": "{{first_name}}",
+            "lastName": "{{last_name}}",
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "MyLife",
+        "link": "https://www.mylife.com/unsubscribe/",
+        "method": "POST",
+        "form_data": {
+            "firstName": "{{first_name}}",
+            "lastName": "{{last_name}}",
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "TruePeopleSearch",
+        "link": "https://www.truepeoplesearch.com/removal",
+        "method": "POST",
+        "form_data": {
+            "firstName": "{{first_name}}",
+            "lastName": "{{last_name}}",
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "FastPeopleSearch",
+        "link": "https://www.fastpeoplesearch.com/removal",
+        "method": "POST",
+        "form_data": {
+            "firstName": "{{first_name}}",
+            "lastName": "{{last_name}}",
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "That'sThem",
+        "link": "https://thatsthem.com/optout",
+        "method": "POST",
+        "form_data": {
+            "firstName": "{{first_name}}",
+            "lastName": "{{last_name}}",
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "FamilyTreeNow",
+        "link": "https://www.familytreenow.com/optout",
+        "method": "POST",
+        "form_data": {
+            "firstName": "{{first_name}}",
+            "lastName": "{{last_name}}",
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "Instant Checkmate",
+        "link": "https://www.instantcheckmate.com/opt-out/",
+        "method": "POST",
+        "form_data": {
+            "firstName": "{{first_name}}",
+            "lastName": "{{last_name}}",
+            "email": "{{email}}"
+        }
+    },
+    {
+        "name": "TruthFinder",
+        "link": "https://www.truthfinder.com/opt-out/",
+        "method": "POST",
+        "form_data": {
+            "firstName": "{{first_name}}",
+            "lastName": "{{last_name}}",
+            "email": "{{email}}"
+        }
+    }
+]

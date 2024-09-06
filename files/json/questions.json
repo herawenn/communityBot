@@ -1,0 +1,334 @@
+{
+  "Questions": [
+    {
+      "Question": "What is a firewall and what is its main function?",
+      "Options": [
+        "A barrier that prevents the spread of wildfires",
+        "A network security system that filters incoming and outgoing network traffic",
+        "A type of encryption used to secure data",
+        "A method of social engineering attack"
+      ],
+      "Correct_Answer": "A network security system that filters incoming and outgoing network traffic"
+    },
+    {
+      "Question": "What does HTTPS stand for and what does it indicate about a website?",
+      "Options": [
+        "Hyper Text Protocol Secure",
+        "Hyper Text Transfer Secure",
+        "Hyper Transfer Protocol Secure",
+        "Hyper Text Presentation Secure"
+      ],
+      "Correct_Answer": "Hyper Text Transfer Protocol Secure"
+    },
+    {
+      "Question": "What is two-factor authentication (2FA) and what does it add to the login process?",
+      "Options": [
+        "A second layer of security, typically a code sent to your phone or an app.",
+        "A more complex password that combines letters, numbers, and symbols.",
+        "A biometric scan, such as a fingerprint or facial recognition.",
+        "All of the above."
+      ],
+      "Correct_Answer": "A second layer of security, typically a code sent to your phone or an app."
+    },
+    {
+      "Question": "What is the Internet of Things (IoT) and what are potential security concerns related to it?",
+      "Options": [
+        "Connecting traditional devices like refrigerators and cars to the internet, potentially introducing new attack vectors.",
+        "A new protocol for secure data transfer over the internet.",
+        "A method of cloud computing specifically for the storage of sensitive data.",
+        "None of the above."
+      ],
+      "Correct_Answer": "Connecting traditional devices like refrigerators and cars to the internet, potentially introducing new attack vectors."
+    },
+    {
+      "Question": "What is the principle of least privilege and why is it important?",
+      "Options": [
+        "The principle of least privilege grants users and processes only the minimum permissions necessary to perform their tasks, reducing potential security risks.",
+        "It ensures that all users have equal privileges, promoting fairness and transparency.",
+        "It is a method of encrypting data at rest, ensuring it can only be accessed with the right key.",
+        "It involves regularly reviewing and revoking unnecessary privileges to minimize risks."
+      ],
+      "Correct_Answer": "The principle of least privilege grants users and processes only the minimum permissions necessary to perform their tasks, reducing potential security risks."
+    },
+    {
+      "Question": "What does OWASP stand for and what is its significance in web application security?",
+      "Options": [
+        "Open Web Application Security Project",
+        "Online Webpage Analysis and Security Protocol",
+        "Open-Source Web Assessment Platform",
+        "Official Webpage Security Protocol"
+      ],
+      "Correct_Answer": "Open Web Application Security Project"
+    },
+    {
+      "Question": "What is a botnet and how does it impact cybersecurity?",
+      "Options": [
+        "A network of compromised devices controlled by an attacker, often used for malicious activities.",
+        "A type of malware that spreads through instant messaging platforms.",
+        "A method of securing data transmission over the internet.",
+        "A social engineering tactic to gain access to sensitive information."
+      ],
+      "Correct_Answer": "A network of compromised devices controlled by an attacker, often used for malicious activities."
+    },
+    {
+      "Question": "What is a VPN and what is its primary use?",
+      "Options": [
+        "A virtual private network that provides a secure connection over a public network.",
+        "A type of firewall that filters network traffic based on user roles.",
+        "A method of encrypting data using a virtual key.",
+        "A social engineering technique to gain trust and access."
+      ],
+      "Correct_Answer": "A virtual private network that provides a secure connection over a public network."
+    },
+    {
+      "Question": "What is a Trojan horse in the context of cybersecurity?",
+      "Options": [
+        "A type of malware that disguises itself as legitimate software.",
+        "A method of gaining unauthorized access by exploiting a backdoor.",
+        "A social engineering tactic to trick users into downloading malware.",
+        "A type of virus that spreads through email attachments."
+      ],
+      "Correct_Answer": "A type of malware that disguises itself as legitimate software."
+    },
+    {
+      "Question": "What is a keylogger and how does it compromise security?",
+      "Options": [
+        "A software or hardware that records keystrokes, potentially capturing sensitive information.",
+        "A method of encrypting data using a unique key for each user.",
+        "A type of firewall that logs network traffic.",
+        "A social engineering tactic to gather login credentials."
+      ],
+      "Correct_Answer": "A software or hardware that records keystrokes, potentially capturing sensitive information."
+    },
+    {
+      "Question": "What is a Distributed Denial of Service (DDoS) attack and how does it differ from a DoS attack?",
+      "Options": [
+        "A DDoS attack is a more powerful version of a DoS attack, using multiple compromised systems to overwhelm a target.",
+        "A DDoS attack targets a distributed network, while a DoS attack focuses on a single system.",
+        "A DDoS attack involves stealing data, while a DoS attack aims to disrupt service.",
+        "A DDoS attack uses social engineering, while a DoS attack relies on network traffic."
+      ],
+      "Correct_Answer": "A DDoS attack is a more powerful version of a DoS attack, using multiple compromised systems to overwhelm a target."
+    },
+    {
+      "Question": "What is a rootkit and what is its purpose?",
+      "Options": [
+        "A software tool that provides administrator-level access to a computer or network.",
+        "A type of malware that hides its presence and allows attackers to control a system.",
+        "A method of securing a network by restricting root access.",
+        "A social engineering tactic to gain administrative privileges."
+      ],
+      "Correct_Answer": "A type of malware that hides its presence and allows attackers to control a system."
+    },
+    {
+      "Question": "What is a ransomware attack and what is its primary goal?",
+      "Options": [
+        "Encrypting data and demanding payment for its release.",
+        "Stealing sensitive information and selling it on the dark web.",
+        "Gaining unauthorized access to a system and causing disruption.",
+        "Impersonating a legitimate user to conduct fraudulent activities."
+      ],
+      "Correct_Answer": "Encrypting data and demanding payment for its release."
+    },
+    {
+      "Question": "What is a man-in-the-middle (MitM) attack and what is its objective?",
+      "Options": [
+        "Intercepting and altering communication between two parties without their knowledge.",
+        "Gaining access to a system by exploiting a vulnerability in the middle of a software update.",
+        "A type of social engineering attack where the attacker poses as a trusted entity.",
+        "A method of stealing data by intercepting wireless signals."
+      ],
+      "Correct_Answer": "Intercepting and altering communication between two parties without their knowledge."
+    },
+    {
+      "Question": "What is a drive-by download attack and how does it occur?",
+      "Options": [
+        "An attack where a user unknowingly downloads malware by visiting a compromised website.",
+        "A method of stealing data by connecting infected USB drives to a system.",
+        "A type of social engineering attack that tricks users into downloading fake software.",
+        "A network attack that exploits vulnerabilities in file-sharing protocols."
+      ],
+      "Correct_Answer": "An attack where a user unknowingly downloads malware by visiting a compromised website."
+    },
+    {
+      "Question": "What is a buffer overflow attack and how does it exploit software vulnerabilities?",
+      "Options": [
+        "Overwriting a program's memory with malicious code, potentially taking control of the system.",
+        "A method of stealing data by overflowing a database buffer.",
+        "A type of social engineering attack that tricks users into revealing sensitive information.",
+        "A network attack that exploits buffer underflow vulnerabilities."
+      ],
+      "Correct_Answer": "Overwriting a program's memory with malicious code, potentially taking control of the system."
+    },
+    {
+      "Question": "What is a cross-site scripting (XSS) attack and how does it impact web applications?",
+      "Options": [
+        "Injecting malicious scripts into web pages viewed by other users, potentially stealing data or altering content.",
+        "A method of stealing cookies by exploiting cross-site request forgery.",
+        "A type of social engineering attack that targets users of multiple websites.",
+        "A network attack that exploits cross-site vulnerabilities in web servers."
+      ],
+      "Correct_Answer": "Injecting malicious scripts into web pages viewed by other users, potentially stealing data or altering content."
+    },
+    {
+      "Question": "What is SQL injection and what is its potential impact on databases?",
+      "Options": [
+        "Inserting malicious SQL code into user inputs, potentially allowing attackers to manipulate or extract data.",
+        "A method of securing SQL databases by injecting security rules.",
+        "A type of social engineering attack that targets database administrators.",
+        "A network attack that exploits SQL vulnerabilities to gain remote access."
+      ],
+      "Correct_Answer": "Inserting malicious SQL code into user inputs, potentially allowing attackers to manipulate or extract data."
+    },
+    {
+      "Question": "What is a zero-day exploit and what is its significance in cybersecurity?",
+      "Options": [
+        "A vulnerability that is unknown to the software vendor, allowing attackers to exploit it before a patch is released.",
+        "A type of attack that occurs within zero days of a software release.",
+        "A method of securing a system by patching all known vulnerabilities.",
+        "A social engineering tactic to exploit users' lack of awareness."
+      ],
+      "Correct_Answer": "A vulnerability that is unknown to the software vendor, allowing attackers to exploit it before a patch is released."
+    },
+    {
+      "Question": "What is a backdoor and what is its purpose in cybersecurity?",
+      "Options": [
+        "A hidden method of gaining unauthorized access to a system, bypassing normal security measures.",
+        "A type of firewall that allows certain traffic to bypass filtering rules.",
+        "A method of encrypting data using a backdoor key.",
+        "A social engineering tactic to gain trust and access."
+      ],
+      "Correct_Answer": "A hidden method of gaining unauthorized access to a system, bypassing normal security measures."
+    },
+    {
+      "Question": "What is a spear phishing attack and how does it differ from regular phishing?",
+      "Options": [
+        "A targeted phishing attack tailored to a specific individual or organization, making it more convincing.",
+        "A type of phishing that uses a spear-like symbol in emails.",
+        "A method of stealing data by exploiting a spear-phishing vulnerability.",
+        "A social engineering tactic that involves sending fake spear-fishing invitations."
+      ],
+      "Correct_Answer": "A targeted phishing attack tailored to a specific individual or organization, making it more convincing."
+    },
+    {
+      "Question": "What is a white hat hacker and what is their role in cybersecurity?",
+      "Options": [
+        "An ethical hacker who identifies and reports security vulnerabilities to help improve security.",
+        "A hacker who breaks into systems for personal gain.",
+        "A type of firewall that allows only authorized traffic.",
+        "A social engineering expert who tests an organization's security awareness."
+      ],
+      "Correct_Answer": "An ethical hacker who identifies and reports security vulnerabilities to help improve security."
+    },
+    {
+      "Question": "What is a black hat hacker and what is their primary motivation?",
+      "Options": [
+        "A malicious hacker who breaks into systems with the intent to cause harm or steal data.",
+        "A hacker who wears a black hat as a symbol of anonymity.",
+        "A type of firewall that blocks all incoming traffic.",
+        "A social engineering expert who uses deception for personal gain."
+      ],
+      "Correct_Answer": "A malicious hacker who breaks into systems with the intent to cause harm or steal data."
+    },
+    {
+      "Question": "What is a grey hat hacker and what sets them apart from other types of hackers?",
+      "Options": [
+        "A hacker who sometimes operates ethically and sometimes engages in illegal activities.",
+        "A hacker who wears a grey hat as a symbol of neutrality.",
+        "A type of firewall that allows some traffic and blocks other traffic.",
+        "A social engineering expert who uses both ethical and deceptive tactics."
+      ],
+      "Correct_Answer": "A hacker who sometimes operates ethically and sometimes engages in illegal activities."
+    },
+    {
+      "Question": "What is a penetration test and what is its purpose in cybersecurity?",
+      "Options": [
+        "A simulated attack on a computer system to evaluate its security and identify vulnerabilities.",
+        "A method of testing the strength of encryption algorithms.",
+        "A type of firewall test to ensure proper configuration.",
+        "A social engineering exercise to train employees on security awareness."
+      ],
+      "Correct_Answer": "A simulated attack on a computer system to evaluate its security and identify vulnerabilities."
+    },
+    {
+      "Question": "What is a security audit and what does it involve?",
+      "Options": [
+        "A comprehensive review of an organization's security policies, procedures, and technologies.",
+        "A type of firewall audit to ensure compliance with security standards.",
+        "A method of encrypting data for secure storage.",
+        "A social engineering assessment to evaluate employee security practices."
+      ],
+      "Correct_Answer": "A comprehensive review of an organization's security policies, procedures, and technologies."
+    },
+    {
+      "Question": "What is a security policy and what is its role in an organization?",
+      "Options": [
+        "A set of rules and guidelines that govern how an organization manages and protects its data and systems.",
+        "A type of firewall policy that defines allowed network traffic.",
+        "A method of encrypting data based on organizational policies.",
+        "A social engineering tactic to manipulate users into following certain rules."
+      ],
+      "Correct_Answer": "A set of rules and guidelines that govern how an organization manages and protects its data and systems."
+    },
+    {
+      "Question": "What is a security awareness program and what is its objective?",
+      "Options": [
+        "A program designed to educate employees about security threats and best practices to reduce security risks.",
+        "A type of firewall training program for IT staff.",
+        "A method of encrypting data using employee awareness as a key.",
+        "A social engineering campaign to raise security awareness."
+      ],
+      "Correct_Answer": "A program designed to educate employees about security threats and best practices to reduce security risks."
+    },
+    {
+      "Type": "True/False",
+      "Question": "A firewall is used to protect a computer from malware.",
+      "Correct_Answer": "True"
+    },
+    {
+      "Type": "True/False",
+      "Question": "HTTPS is a secure protocol for transferring data over the internet.",
+      "Correct_Answer": "True"
+    },
+    {
+      "Type": "True/False",
+      "Question": "Two-factor authentication is required to access most online banking systems.",
+      "Correct_Answer": "False"
+    },
+    {
+      "Type": "True/False",
+      "Question": "A VPN can make your internet connection slower.",
+      "Correct_Answer": "True"
+    },
+    {
+      "Type": "True/False",
+      "Question": "Antivirus software can detect all types of malware.",
+      "Correct_Answer": "False"
+    },
+    {
+      "Type": "Fill in the Blank",
+      "Question": "The most common type of malware is a ___",
+      "Correct_Answer": "Trojan"
+    },
+    {
+      "Type": "Fill in the Blank",
+      "Question": "A strong password should include at least one ___ character.",
+      "Correct_Answer": "special"
+    },
+    {
+      "Type": "Fill in the Blank",
+      "Question": "Phishing is a type of attack that uses ___ to trick users.",
+      "Correct_Answer": "social engineering"
+    },
+    {
+      "Type": "Fill in the Blank",
+      "Question": "A secure password should be changed every ___ months.",
+      "Correct_Answer": "3"
+    },
+    {
+      "Type": "Fill in the Blank",
+      "Question": "A ___ is a type of malware that demands payment in exchange for restoring access to data.",
+      "Correct_Answer": "ransomware"
+    }
+  ]
+}

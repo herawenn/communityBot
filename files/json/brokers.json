@@ -1,0 +1,1842 @@
+[
+    {
+        "name": "411.com",
+        "privacy_policy": "https://www.411.com/data-policy",
+        "data_broker_email": "support@whitepages.com",
+        "location": "Washington",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.411.com/data-policy"
+    },
+    {
+        "name": "Accucom",
+        "privacy_policy": "",
+        "data_broker_email": "",
+        "location": "Massachusetts",
+        "opt_out_allowed": "No",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Accudata Integrated Marketing, Inc.",
+        "privacy_policy": "http://www.accudata.com/terms-use-privacy-policy/",
+        "data_broker_email": "marketing@accudata.com",
+        "location": "Florida",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.accudata.com/terms-use-privacy-policy/"
+    },
+    {
+        "name": "Active Intel Investigations Llc",
+        "privacy_policy": "",
+        "data_broker_email": "",
+        "location": "Texas",
+        "opt_out_allowed": "No",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Acxiom Llc",
+        "privacy_policy": "https://acxiom.com/about-us/privacy",
+        "data_broker_email": "privacy@acxiom.com",
+        "location": "Arizona",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://acxiom.com/about-us/privacy"
+    },
+    {
+        "name": "Address Search",
+        "privacy_policy": "http://www.addresssearch.com/privacy-policy.php",
+        "data_broker_email": "",
+        "location": "",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.addresssearch.com/privacy-policy.php"
+    },
+    {
+        "name": "Addresses.Com",
+        "privacy_policy": "http://www.peopleconnect.us/privacy",
+        "data_broker_email": "",
+        "location": "Washington",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.peopleconnect.us/privacy"
+    },
+    {
+        "name": "Advanced Background Checks",
+        "privacy_policy": "http://www.advancedbackgroundchecks.com/privacy ; https://www.advancedbackgroun\u2026",
+        "data_broker_email": "",
+        "location": "California",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.advancedbackgroundchecks.com/privacy ; https://www.advancedbackgroun\u2026"
+    },
+    {
+        "name": "Advantage Credit, Inc.",
+        "privacy_policy": "https://www.advcredit.com/privacy-policy/",
+        "data_broker_email": "info@advcredit.com",
+        "location": "Colorado",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.advcredit.com/privacy-policy/"
+    },
+    {
+        "name": "Advantage Sales & Marketing Llc",
+        "privacy_policy": "https://www.advantagesolutions.net/pages/privacy",
+        "data_broker_email": "alex@take5mg.com",
+        "location": "California",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.advantagesolutions.net/pages/privacy"
+    },
+    {
+        "name": "Advertise4Sales Llc",
+        "privacy_policy": "",
+        "data_broker_email": "tapster@gmail.com",
+        "location": "Washington",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Alc, Inc.",
+        "privacy_policy": "https://www.alc.com/privacy-policy/",
+        "data_broker_email": "sherry.booles@alc.com",
+        "location": "New Jersey",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.alc.com/privacy-policy/"
+    },
+    {
+        "name": "All Web Leads Inc",
+        "privacy_policy": "http://www.allwebleads.com/privacy",
+        "data_broker_email": "onlineops@allwebleads.com",
+        "location": "Texas",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.allwebleads.com/privacy"
+    },
+    {
+        "name": "Allareacodes.Com",
+        "privacy_policy": "http://www.allareacodes.com/policies.htm",
+        "data_broker_email": "press@allareacodes.com",
+        "location": "Missouri",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.allareacodes.com/policies.htm"
+    },
+    {
+        "name": "Altisource Holdings, Llc",
+        "privacy_policy": "https://altisource.com/Privacy-Notice",
+        "data_broker_email": "Britt.Gottlieb@altisource.com",
+        "location": "Georgia",
+        "opt_out_allowed": "No",
+        "removal_link": "https://altisource.com/Privacy-Notice"
+    },
+    {
+        "name": "Amrent, Inc.",
+        "privacy_policy": "https://www.amrent.com/privacy_policy.html",
+        "data_broker_email": "Legal@CBC-Companies.com",
+        "location": "Ohio",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.amrent.com/privacy_policy.html"
+    },
+    {
+        "name": "Analyticsiq, Inc.",
+        "privacy_policy": "https://analytics-iq.com/privacy-policy/",
+        "data_broker_email": "gailm@analytics-iq.com",
+        "location": "Georgia",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://analytics-iq.com/privacy-policy/"
+    },
+    {
+        "name": "Archives",
+        "privacy_policy": "https://www.ancestry.com/cs/legal/privacystatement?hideHeader=1",
+        "data_broker_email": "dpo@ancestry.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.ancestry.com/cs/legal/privacystatement?hideHeader=1"
+    },
+    {
+        "name": "Asl Marketing Inc",
+        "privacy_policy": "http://aslmarketing.com/privacy-policy/",
+        "data_broker_email": "info@aslmarketing.com",
+        "location": "New York",
+        "opt_out_allowed": "No",
+        "removal_link": "http://aslmarketing.com/privacy-policy/"
+    },
+    {
+        "name": "Assurance Iq,Inc.",
+        "privacy_policy": "https://assurance.com/privacy-policy",
+        "data_broker_email": "swenson@assurance.com",
+        "location": "Washington",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://assurance.com/privacy-policy"
+    },
+    {
+        "name": "Automation Research, Inc. D/B/A Dataverify",
+        "privacy_policy": "https://www.dataverify.com/content/privacy.htm",
+        "data_broker_email": "Sue.Temple@CBC-Companies.com",
+        "location": "Ohio",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.dataverify.com/content/privacy.htm"
+    },
+    {
+        "name": "Avrick Direct, Inc.",
+        "privacy_policy": "http://avrickdirect.com/?page_id=16",
+        "data_broker_email": "avrickdirect@avrick.com",
+        "location": "Washington",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "http://avrickdirect.com/?page_id=16"
+    },
+    {
+        "name": "Background Check International (Bci)",
+        "privacy_policy": "",
+        "data_broker_email": "kit@bcint.com",
+        "location": "",
+        "opt_out_allowed": "No",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Background-Check-Only.Com",
+        "privacy_policy": "http://www.background-check-only.com/privacy-policy.htm",
+        "data_broker_email": "",
+        "location": "",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.background-check-only.com/privacy-policy.htm"
+    },
+    {
+        "name": "Background Information Services, Inc. (Bis)",
+        "privacy_policy": "http://www.bisi.com/contact.php",
+        "data_broker_email": "compliance@bisi.com",
+        "location": "Colorado",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.bisi.com/contact.php"
+    },
+    {
+        "name": "Backgroundchecks.Com Llc",
+        "privacy_policy": "https://www.backgroundchecks.com/privacypolicy",
+        "data_broker_email": "cklafehn@backgroundchecks.com",
+        "location": "Texas",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.backgroundchecks.com/privacypolicy"
+    },
+    {
+        "name": "Bcs Background Screening, Llc",
+        "privacy_policy": "http://www.background-checks-systems.com/privacy_policy.htm",
+        "data_broker_email": "",
+        "location": "Florida",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.background-checks-systems.com/privacy_policy.htm"
+    },
+    {
+        "name": "Beenverified, Inc. And Its Subsidiaries/Affiliates",
+        "privacy_policy": "https://www.beenverified.com/faq/privacy/",
+        "data_broker_email": "support@beenverified.com",
+        "location": "New York",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.beenverified.com/faq/privacy/"
+    },
+    {
+        "name": "Belardi Ostroy Alc Llc/ Belardi Wong",
+        "privacy_policy": "https://www.belardiwong.com/privacypolicy",
+        "data_broker_email": "sherry.booles@alc.com",
+        "location": "New York",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.belardiwong.com/privacypolicy"
+    },
+    {
+        "name": "Black Knight Data & Analytics, Llc",
+        "privacy_policy": "https://www.blackknightinc.com/privacy-notice/",
+        "data_broker_email": "corporatecompliance@bkfs.com",
+        "location": "New York",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.blackknightinc.com/privacy-notice/"
+    },
+    {
+        "name": "Blackbaud, Inc.",
+        "privacy_policy": "https://www.blackbaud.com/company/privacy-policy/north-america",
+        "data_broker_email": "cameron.stoll@blackbaud.com",
+        "location": "South Carolina",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.blackbaud.com/company/privacy-policy/north-america"
+    },
+    {
+        "name": "Blockshopper",
+        "privacy_policy": "https://blockshopper.com/privacy-policy",
+        "data_broker_email": "",
+        "location": "Missouri",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://blockshopper.com/privacy-policy"
+    },
+    {
+        "name": "Bridgevine Inc.",
+        "privacy_policy": "https://www.bridgevine.com/privacy-policy/",
+        "data_broker_email": "dwayne.landry@bridgevine.com",
+        "location": "Georgia",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.bridgevine.com/privacy-policy/"
+    },
+    {
+        "name": "Business Profiles",
+        "privacy_policy": "http://businessprofiles.com/privacy",
+        "data_broker_email": "",
+        "location": "Oklahoma",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://businessprofiles.com/privacy"
+    },
+    {
+        "name": "Cbcinnovis, Inc.",
+        "privacy_policy": "https://www.cbcinnovis.com/privacy.html",
+        "data_broker_email": "cbcservices@cbcinnovis.com",
+        "location": "Ohio",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.cbcinnovis.com/privacy.html"
+    },
+    {
+        "name": "Cdk Global, Llc",
+        "privacy_policy": "https://www.cdkglobal.com/us/privacy-policy",
+        "data_broker_email": "james.kinzer@cdk.com",
+        "location": "Illinois",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.cdkglobal.com/us/privacy-policy"
+    },
+    {
+        "name": "Cell Phone Registry",
+        "privacy_policy": "http://cellphoneregistry.com/index.php?xpath=privacy",
+        "data_broker_email": "",
+        "location": "",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://cellphoneregistry.com/index.php?xpath=privacy"
+    },
+    {
+        "name": "Census Info Us",
+        "privacy_policy": "http://www.census-info.us/privacy",
+        "data_broker_email": "",
+        "location": "",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.census-info.us/privacy"
+    },
+    {
+        "name": "Cic Mortgage Credit Inc.",
+        "privacy_policy": "https://www.ciccredit.com/information-security-policy-and-guideline/",
+        "data_broker_email": "CTHOMAS@CICCREDIT.COM",
+        "location": "Tennessee",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.ciccredit.com/information-security-policy-and-guideline/"
+    },
+    {
+        "name": "Civis Analytics, Inc.",
+        "privacy_policy": "https://www.civisanalytics.com/privacy_policy/",
+        "data_broker_email": "compliance@civisanalytics.com",
+        "location": "Illinois",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.civisanalytics.com/privacy_policy/"
+    },
+    {
+        "name": "Clarity Services, Inc.",
+        "privacy_policy": "https://www.clarityservices.com/privacy-principles/",
+        "data_broker_email": "clarityconsumers@experian.com",
+        "location": "Florida",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.clarityservices.com/privacy-principles/"
+    },
+    {
+        "name": "Compact Information Systems",
+        "privacy_policy": "http://www.compactlists.com/privacy-policy.html",
+        "data_broker_email": "pei@compactlists.com",
+        "location": "Washington",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.compactlists.com/privacy-policy.html"
+    },
+    {
+        "name": "Confi-Chek",
+        "privacy_policy": "",
+        "data_broker_email": "customercare@peoplefinders.com",
+        "location": "California",
+        "opt_out_allowed": "No",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Contemporary Information Corp.",
+        "privacy_policy": "https://www.cicreports.com/consumer-assistance/#privacypolicy",
+        "data_broker_email": "compliance@cicreports.com",
+        "location": "California",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.cicreports.com/consumer-assistance/#privacypolicy"
+    },
+    {
+        "name": "Corelogic Background Data, Llc.",
+        "privacy_policy": "https://www.corelogic.com/privacy.aspx",
+        "data_broker_email": "dghazaleh@corelogic.com",
+        "location": "Texas",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.corelogic.com/privacy.aspx"
+    },
+    {
+        "name": "Corelogic Credco, Llc",
+        "privacy_policy": "https://www.corelogic.com/privacy.aspx",
+        "data_broker_email": "dghazaleh@corelogic.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.corelogic.com/privacy.aspx"
+    },
+    {
+        "name": "Corelogic Credco Of Puerto Rico",
+        "privacy_policy": "https://www.corelogic.com/privacy.aspx",
+        "data_broker_email": "dghazaleh@corelogic.com",
+        "location": "",
+        "opt_out_allowed": "",
+        "removal_link": "https://www.corelogic.com/privacy.aspx"
+    },
+    {
+        "name": "Corelogic Screening Services, Llc",
+        "privacy_policy": "https://www.corelogic.com/privacy.aspx",
+        "data_broker_email": "dghazaleh@corelogic.com",
+        "location": "Texas",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.corelogic.com/privacy.aspx"
+    },
+    {
+        "name": "Corelogic Solutions, Llc",
+        "privacy_policy": "https://www.corelogic.com/privacy.aspx",
+        "data_broker_email": "dghazaleh@corelogic.com",
+        "location": "California",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.corelogic.com/privacy.aspx"
+    },
+    {
+        "name": "Corporation Wiki",
+        "privacy_policy": "http://www.corporationwiki.com/privacy-policy",
+        "data_broker_email": "",
+        "location": "Florida",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.corporationwiki.com/privacy-policy"
+    },
+    {
+        "name": "Cortera, Inc.",
+        "privacy_policy": "https://www.cortera.com/privacy-policy",
+        "data_broker_email": "privacy@cortera.com",
+        "location": "Florida",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.cortera.com/privacy-policy"
+    },
+    {
+        "name": "Court Records",
+        "privacy_policy": "http://www.courtrecords.org/index.php?xpath=privacy",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.courtrecords.org/index.php?xpath=privacy"
+    },
+    {
+        "name": "Court Registry",
+        "privacy_policy": "http://courtregistry.org/index.php?xpath=privacy",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://courtregistry.org/index.php?xpath=privacy"
+    },
+    {
+        "name": "Criminal Background Records",
+        "privacy_policy": "http://www.criminalbackgroundrecords.com/privacy.html",
+        "data_broker_email": "privacy@criminalbackgroundchecks.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.criminalbackgroundrecords.com/privacy.html"
+    },
+    {
+        "name": "Criminal Pages",
+        "privacy_policy": "http://www.criminalpages.com/privacy/",
+        "data_broker_email": "",
+        "location": "Washington",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.criminalpages.com/privacy/"
+    },
+    {
+        "name": "Criminal Screen",
+        "privacy_policy": "http://www.criminalscreen.com/privacy.cfm",
+        "data_broker_email": "Webmaster@CriminalScreen.com",
+        "location": "Florida",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.criminalscreen.com/privacy.cfm"
+    },
+    {
+        "name": "Criminal Watch Dog",
+        "privacy_policy": "https://www.criminalwatchdog.com/Privacy-Policy.aspx",
+        "data_broker_email": "",
+        "location": "Massachusetts",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.criminalwatchdog.com/Privacy-Policy.aspx"
+    },
+    {
+        "name": "Cupidscreen",
+        "privacy_policy": "https://cupidscreen.com/privacy-policy/",
+        "data_broker_email": "info@onlineinvestigations.com.au",
+        "location": "",
+        "opt_out_allowed": "No",
+        "removal_link": "https://cupidscreen.com/privacy-policy/"
+    },
+    {
+        "name": "Data Facts, Inc.",
+        "privacy_policy": "https://www.datafacts.com/company-information-privacy-policy",
+        "data_broker_email": "johnna@datafacts.com",
+        "location": "Tennessee",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.datafacts.com/company-information-privacy-policy"
+    },
+    {
+        "name": "Data Facts, Inc.",
+        "privacy_policy": "https://www.datafacts.com/company-information-privacy-policy",
+        "data_broker_email": "johnna@datafacts.com",
+        "location": "Tennessee",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.datafacts.com/company-information-privacy-policy"
+    },
+    {
+        "name": "Dataamerican.Com",
+        "privacy_policy": "http://www.dataamerica.com/pages/privacy-policy/",
+        "data_broker_email": "info@dataamerica.com",
+        "location": "New York",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.dataamerica.com/pages/privacy-policy/"
+    },
+    {
+        "name": "Databaseusa.Com Llc",
+        "privacy_policy": "https://databaseusa.com/index.php/privacy-policy/",
+        "data_broker_email": "consult@databaseusa.com",
+        "location": "Nebraska",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://databaseusa.com/index.php/privacy-policy/"
+    },
+    {
+        "name": "Datamentors Llc Dba V12",
+        "privacy_policy": "https://v12data.com/v12-privacy-point-of-view/",
+        "data_broker_email": "pkuman@v12data.com",
+        "location": "Florida",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://v12data.com/v12-privacy-point-of-view/"
+    },
+    {
+        "name": "Datamyx Llc Dba Deluxe Marketing Solutions",
+        "privacy_policy": "https://fi.deluxe.com/datamyx-privacy/",
+        "data_broker_email": "privacyprogramoffice@deluxe.com",
+        "location": "Florida",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://fi.deluxe.com/datamyx-privacy/"
+    },
+    {
+        "name": "Datastream Group, Inc.",
+        "privacy_policy": "http://datastreamgroup.com/privacy-policy/",
+        "data_broker_email": "er@datastreamgroup.com",
+        "location": "",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://datastreamgroup.com/privacy-policy/"
+    },
+    {
+        "name": "Datax Ltd",
+        "privacy_policy": "http://dataxltd.com/privacy-policy/",
+        "data_broker_email": "vtinquiries@equifax.com",
+        "location": "Nevada",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://dataxltd.com/privacy-policy/"
+    },
+    {
+        "name": "Death Records",
+        "privacy_policy": "http://deathrecords.org/index.php?xpath=privacy",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://deathrecords.org/index.php?xpath=privacy"
+    },
+    {
+        "name": "Digital Media Solutions",
+        "privacy_policy": "https://digitalmediasolutions.com/privacy-policy",
+        "data_broker_email": "connect@theDMSgrp.com",
+        "location": "Florida",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://digitalmediasolutions.com/privacy-policy"
+    },
+    {
+        "name": "Digital Segment, Llc",
+        "privacy_policy": "https://segment.com/docs/legal/privacy/",
+        "data_broker_email": "bschorer@digitalsegment.com",
+        "location": "Georgia",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://segment.com/docs/legal/privacy/"
+    },
+    {
+        "name": "Divorce Records",
+        "privacy_policy": "http://www.divorcerecords.org/index.php?xpath=privacy",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.divorcerecords.org/index.php?xpath=privacy"
+    },
+    {
+        "name": "Drobu Media Llc",
+        "privacy_policy": "",
+        "data_broker_email": "Dblackman@drobu.com",
+        "location": "New York",
+        "opt_out_allowed": "No",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Early Warning Services, Llc",
+        "privacy_policy": "https://www.earlywarning.com/privacy-policy.html",
+        "data_broker_email": "privacyoffice@earlywarning.com",
+        "location": "Arizona",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.earlywarning.com/privacy-policy.html"
+    },
+    {
+        "name": "Easy Background Check",
+        "privacy_policy": "",
+        "data_broker_email": "",
+        "location": "Washington",
+        "opt_out_allowed": "No",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Easybackgrounds.Com",
+        "privacy_policy": "https://www.easybackgrounds.com/privacy-policy",
+        "data_broker_email": "WSep@ghrr.com",
+        "location": "New Hampshire",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.easybackgrounds.com/privacy-policy"
+    },
+    {
+        "name": "Edvisors Network, Inc.",
+        "privacy_policy": "https://www.edvisors.com/terms-privacy-disclaimer/#privacy-policy",
+        "data_broker_email": "tshaul@collegeloan.com",
+        "location": "Nevada",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.edvisors.com/terms-privacy-disclaimer/#privacy-policy"
+    },
+    {
+        "name": "Email Tracer",
+        "privacy_policy": "http://www.emailtracer.com/privacy.php",
+        "data_broker_email": "",
+        "location": "Massachusetts",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.emailtracer.com/privacy.php"
+    },
+    {
+        "name": "Enformion",
+        "privacy_policy": "https://www.enformion.com/en/privacy/",
+        "data_broker_email": "angela.arriaga@enformion.com",
+        "location": "California",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.enformion.com/en/privacy/"
+    },
+    {
+        "name": "Epsilon Data Management, Llc",
+        "privacy_policy": "https://us.epsilon.com/privacy-policy",
+        "data_broker_email": "Lisa.Gallerano@epsilon.com",
+        "location": "Texas",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://us.epsilon.com/privacy-policy"
+    },
+    {
+        "name": "Equifax Information Services Llc",
+        "privacy_policy": "https://www.equifax.com/privacy/myequifaxservices/",
+        "data_broker_email": "vtinquiries@equifax.com",
+        "location": "Georgia",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.equifax.com/privacy/myequifaxservices/"
+    },
+    {
+        "name": "Experian Data Corp",
+        "privacy_policy": "https://www.experian.com/privacy/prod_serv_policy.html",
+        "data_broker_email": "unsubscribe@experian.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.experian.com/privacy/prod_serv_policy.html"
+    },
+    {
+        "name": "Experian Fraud Prevention Solutions, Inc.",
+        "privacy_policy": "https://www.experian.com/privacy/prod_serv_policy.html",
+        "data_broker_email": "nerissa.rush@experian.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.experian.com/privacy/prod_serv_policy.html"
+    },
+    {
+        "name": "Experian Health, Inc.",
+        "privacy_policy": "https://www.experian.com/privacy/prod_serv_policy.html",
+        "data_broker_email": "nerissa.rush@experian.com",
+        "location": "Tennessee",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.experian.com/privacy/prod_serv_policy.html"
+    },
+    {
+        "name": "Experian Information Solutions, Inc.",
+        "privacy_policy": "https://www.experian.com/privacy/prod_serv_policy.html",
+        "data_broker_email": "nerissa.rush@experian.com",
+        "location": "California",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.experian.com/privacy/prod_serv_policy.html"
+    },
+    {
+        "name": "Experian Marketing Solutions, Inc.",
+        "privacy_policy": "https://www.experian.com/privacy/prod_serv_policy.html",
+        "data_broker_email": "nerissa.rush@experian.com",
+        "location": "California",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.experian.com/privacy/prod_serv_policy.html"
+    },
+    {
+        "name": "Fd Holdings, Llc Dba Factual Data",
+        "privacy_policy": "https://www.factualdata.com/privacy.html?link=Footer-PrivacyPolicy",
+        "data_broker_email": "Sue.Temple@CBC-Companies.com",
+        "location": "Colorado",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.factualdata.com/privacy.html?link=Footer-PrivacyPolicy"
+    },
+    {
+        "name": "First American Data Tree Llc",
+        "privacy_policy": "https://www.datatree.com/privacy-policy",
+        "data_broker_email": "britchie-boland@firstam.com",
+        "location": "California",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.datatree.com/privacy-policy"
+    },
+    {
+        "name": "First Direct, Inc. And Its Subsidiaries/Affiliates",
+        "privacy_policy": "https://www.firstdirectmarketing.com/privacy-policy/",
+        "data_broker_email": "joel@firstdirectmarketing.com",
+        "location": "Nebraska",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.firstdirectmarketing.com/privacy-policy/"
+    },
+    {
+        "name": "First Orion Corporation",
+        "privacy_policy": "https://firstorion.com/privacy-policy/",
+        "data_broker_email": "cdenton@firstorion.com",
+        "location": "Arizona",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://firstorion.com/privacy-policy/"
+    },
+    {
+        "name": "Forewarn, Llc",
+        "privacy_policy": "http://forewarn.com/privacy-policy/",
+        "data_broker_email": "support@forewarn.com",
+        "location": "Florida",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://forewarn.com/privacy-policy/"
+    },
+    {
+        "name": "Free Background Check",
+        "privacy_policy": "http://freebackgroundcheck.us/privacy.php",
+        "data_broker_email": "",
+        "location": "Massachusetts",
+        "opt_out_allowed": "No",
+        "removal_link": "http://freebackgroundcheck.us/privacy.php"
+    },
+    {
+        "name": "Freecellsearch.Com",
+        "privacy_policy": "http://freecellsearch.com/privacypolicy.php",
+        "data_broker_email": "support@freecellsearch.com",
+        "location": "",
+        "opt_out_allowed": "No",
+        "removal_link": "http://freecellsearch.com/privacypolicy.php"
+    },
+    {
+        "name": "Fullcontact, Inc.",
+        "privacy_policy": "https://www.fullcontact.com/privacy-center/#privacy-policy",
+        "data_broker_email": "dan.wobbekind@fullcontact.com",
+        "location": "Colorado",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.fullcontact.com/privacy-center/#privacy-policy"
+    },
+    {
+        "name": "Fused Leads, Llc",
+        "privacy_policy": "https://www.fusedleads.com/",
+        "data_broker_email": "greg@fusedleads.com",
+        "location": "Florida",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.fusedleads.com/"
+    },
+    {
+        "name": "General Information Solutions Llc",
+        "privacy_policy": "https://www.hireright.com/legal/privacy-policy",
+        "data_broker_email": "kristin.jones@hireright.com",
+        "location": "South Carolina",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.hireright.com/legal/privacy-policy"
+    },
+    {
+        "name": "Goodhire",
+        "privacy_policy": "https://www.goodhire.com/privacy",
+        "data_broker_email": "privacy@goodhire.com",
+        "location": "California",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.goodhire.com/privacy"
+    },
+    {
+        "name": "Govarrestrecords.Org",
+        "privacy_policy": "http://www.govarrestrecords.org/privacy.html",
+        "data_broker_email": "",
+        "location": "North Carolina",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.govarrestrecords.org/privacy.html"
+    },
+    {
+        "name": "Governmentregistry.Org",
+        "privacy_policy": "http://governmentregistry.org/index.php?xpath=privacy",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://governmentregistry.org/index.php?xpath=privacy"
+    },
+    {
+        "name": "Govregistry.Us",
+        "privacy_policy": "http://govregistry.us/privacy.php",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://govregistry.us/privacy.php"
+    },
+    {
+        "name": "Healthcare.Com",
+        "privacy_policy": "https://www.healthcare.com/info/privacy-policy",
+        "data_broker_email": "info@healthcare.com",
+        "location": "Florida",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.healthcare.com/info/privacy-policy"
+    },
+    {
+        "name": "I360, Llc",
+        "privacy_policy": "https://www.i-360.com/privacy-policy/",
+        "data_broker_email": "info@i-360.com",
+        "location": "Virginia",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.i-360.com/privacy-policy/"
+    },
+    {
+        "name": "Id Analytics, Llc",
+        "privacy_policy": "https://www.idanalytics.com/privacy-policy/",
+        "data_broker_email": "ken_meiser@symantec.com",
+        "location": "California",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.idanalytics.com/privacy-policy/"
+    },
+    {
+        "name": "Ihs Markit",
+        "privacy_policy": "https://ihsmarkit.com/Legal/privacy.html",
+        "data_broker_email": "bruce.noll@ihsmarkit.com",
+        "location": "Michigan",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://ihsmarkit.com/Legal/privacy.html"
+    },
+    {
+        "name": "Incheck Inc",
+        "privacy_policy": "https://incheck.net/privacy-policy-pdf/",
+        "data_broker_email": "abby@incheck.net",
+        "location": "Wisconsin",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://incheck.net/privacy-policy-pdf/"
+    },
+    {
+        "name": "Inflection.Com, Inc",
+        "privacy_policy": "https://www.inflection.com/privacy-policy",
+        "data_broker_email": "elizabeth@goodhire.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.inflection.com/privacy-policy"
+    },
+    {
+        "name": "Inflection Risk Solutions, Llc",
+        "privacy_policy": "https://www.inflection.com/privacy-policy",
+        "data_broker_email": "elizabeth@goodhire.com",
+        "location": "California",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.inflection.com/privacy-policy"
+    },
+    {
+        "name": "Info Pay",
+        "privacy_policy": "https://www.infopay.com/privacy.php",
+        "data_broker_email": "",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.infopay.com/privacy.php"
+    },
+    {
+        "name": "Infocore Inc.",
+        "privacy_policy": "https://infocore.com/infocore-privacy-policy/",
+        "data_broker_email": "info@infocore.com",
+        "location": "California",
+        "opt_out_allowed": "No",
+        "removal_link": "https://infocore.com/infocore-privacy-policy/"
+    },
+    {
+        "name": "Infogroup Inc.",
+        "privacy_policy": "https://www.infogroup.com/privacy-policy",
+        "data_broker_email": "privacyteam@infogroup.com",
+        "location": "Nebraska",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.infogroup.com/privacy-policy"
+    },
+    {
+        "name": "Infotracer",
+        "privacy_policy": "https://members.infotracer.com/customer/terms?tab=privacy",
+        "data_broker_email": "support@infotracer.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://members.infotracer.com/customer/terms?tab=privacy"
+    },
+    {
+        "name": "Infutor Data Solutions",
+        "privacy_policy": "https://infutor.com/company/data-privacy/",
+        "data_broker_email": "pedrokialanda@infutor.com",
+        "location": "Illinois",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://infutor.com/company/data-privacy/"
+    },
+    {
+        "name": "Instant Checkmate, Llc",
+        "privacy_policy": "https://www.instantcheckmate.com/privacy_policy",
+        "data_broker_email": "support@instantcheckmate.com",
+        "location": "California",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.instantcheckmate.com/privacy_policy"
+    },
+    {
+        "name": "Instant People Finder",
+        "privacy_policy": "http://www.instantpeoplefinder.com/privacy.html",
+        "data_broker_email": "",
+        "location": "Washington",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.instantpeoplefinder.com/privacy.html"
+    },
+    {
+        "name": "Instantbackgroundreport.Com",
+        "privacy_policy": "http://instantbackgroundreport.com/index.php?xpath=privacy",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://instantbackgroundreport.com/index.php?xpath=privacy"
+    },
+    {
+        "name": "Insurance Services Office, Inc.",
+        "privacy_policy": "https://www.verisk.com/privacy-trademarks-use/iso-online-privacy-notice/",
+        "data_broker_email": "jvolk@verisk.com",
+        "location": "New Jersey",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.verisk.com/privacy-trademarks-use/iso-online-privacy-notice/"
+    },
+    {
+        "name": "Intel Registry",
+        "privacy_policy": "http://intelregistry.com/privacy.php",
+        "data_broker_email": "support@intelregistry.com",
+        "location": "",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://intelregistry.com/privacy.php"
+    },
+    {
+        "name": "Inteligator",
+        "privacy_policy": "http://www.inteligator.com/home/privacy.php",
+        "data_broker_email": "",
+        "location": "",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.inteligator.com/home/privacy.php"
+    },
+    {
+        "name": "Intelius",
+        "privacy_policy": "http://www.peopleconnect.us/privacy",
+        "data_broker_email": "privacy@peopleconnect.us",
+        "location": "Washington",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.peopleconnect.us/privacy"
+    },
+    {
+        "name": "Intellicorp Records, Inc.",
+        "privacy_policy": "http://www.intellicorp.net/marketing/PrivacyPolicy.aspx",
+        "data_broker_email": "jvolk@verisk.com",
+        "location": "Ohio",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.intellicorp.net/marketing/PrivacyPolicy.aspx"
+    },
+    {
+        "name": "Intellireal Llc",
+        "privacy_policy": "https://www.equifax.com/privacy/",
+        "data_broker_email": "vtinquiries@equifax.com",
+        "location": "Georgia",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.equifax.com/privacy/"
+    },
+    {
+        "name": "Interactive Data, Llc",
+        "privacy_policy": "https://ididata.com/idis-privacy-statement/",
+        "data_broker_email": "support@ididata.com",
+        "location": "Florida",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://ididata.com/idis-privacy-statement/"
+    },
+    {
+        "name": "Iq Data Systems, Inc. Dba Backgrounds Online",
+        "privacy_policy": "https://www.backgroundsonline.com/privacy-policy",
+        "data_broker_email": "nate.waymire@backgroundsonline.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.backgroundsonline.com/privacy-policy"
+    },
+    {
+        "name": "Iso Claims Services, Inc.",
+        "privacy_policy": "https://www.verisk.com/privacy-trademarks-use/iso-online-privacy-notice/",
+        "data_broker_email": "jvolk@verisk.com",
+        "location": "Texas",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.verisk.com/privacy-trademarks-use/iso-online-privacy-notice/"
+    },
+    {
+        "name": "Iso Services, Inc.",
+        "privacy_policy": "https://www.verisk.com/privacy-trademarks-use/iso-online-privacy-notice/",
+        "data_broker_email": "jvolk@verisk.com",
+        "location": "New Jersey",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.verisk.com/privacy-trademarks-use/iso-online-privacy-notice/"
+    },
+    {
+        "name": "Ixi Corporation",
+        "privacy_policy": "https://www.equifax.com/privacy/",
+        "data_broker_email": "vtinquiries@equifax.com",
+        "location": "Georgia",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.equifax.com/privacy/"
+    },
+    {
+        "name": "Jverify, Inc.",
+        "privacy_policy": "",
+        "data_broker_email": "admin@jverify.com",
+        "location": "Texas",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Kbm Group Llc",
+        "privacy_policy": "https://www.kbmg.com/about-us/privacy/",
+        "data_broker_email": "privacy@wundermandata.com",
+        "location": "Colorado",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.kbmg.com/about-us/privacy/"
+    },
+    {
+        "name": "Kgbpeople",
+        "privacy_policy": "http://www.kgbpeople.com/privacy-policy",
+        "data_broker_email": "accounts@kgb.com",
+        "location": "New York",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.kgbpeople.com/privacy-policy"
+    },
+    {
+        "name": "Knowwho, Inc.",
+        "privacy_policy": "https://kw1.knowwho.com/service/privacy/",
+        "data_broker_email": "bbrownson@knowwho.com",
+        "location": "Virginia",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://kw1.knowwho.com/service/privacy/"
+    },
+    {
+        "name": "L2, Inc.",
+        "privacy_policy": "",
+        "data_broker_email": "bruce.willsie@L2Political.com",
+        "location": "Washington",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Lexisnexis Risk Solutions Inc. And Affiliates",
+        "privacy_policy": "https://risk.lexisnexis.com/privacy-policy",
+        "data_broker_email": "legal.compliance@risk.lexisnexis.com",
+        "location": "Georgia",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://risk.lexisnexis.com/privacy-policy"
+    },
+    {
+        "name": "Libertydata.Net",
+        "privacy_policy": "http://www.libertydata.net/privacypolicy.asp",
+        "data_broker_email": "support@libertydata.net",
+        "location": "Florida",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "http://www.libertydata.net/privacypolicy.asp"
+    },
+    {
+        "name": "Locate People",
+        "privacy_policy": "https://members.infotracer.com/customer/terms?tab=privacy",
+        "data_broker_email": "support@infotracer.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://members.infotracer.com/customer/terms?tab=privacy"
+    },
+    {
+        "name": "Locatefamily.Com",
+        "privacy_policy": "http://www.locatefamily.com/privacy_policy.html",
+        "data_broker_email": "",
+        "location": "New York",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.locatefamily.com/privacy_policy.html"
+    },
+    {
+        "name": "Lundquist Consulting, Inc.",
+        "privacy_policy": "http://www.lciinc.com/company/privacyNotice.htm",
+        "data_broker_email": "jvolk@verisk.com",
+        "location": "California",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.lciinc.com/company/privacyNotice.htm"
+    },
+    {
+        "name": "Mapsmoji",
+        "privacy_policy": "http://mapsmoji.com/privacy/",
+        "data_broker_email": "email@mapsmoji.com",
+        "location": "California",
+        "opt_out_allowed": "No",
+        "removal_link": "http://mapsmoji.com/privacy/"
+    },
+    {
+        "name": "Marriage Records",
+        "privacy_policy": "http://www.marriagerecords.org/index.php?xpath=privacy",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.marriagerecords.org/index.php?xpath=privacy"
+    },
+    {
+        "name": "Martin Data Llc",
+        "privacy_policy": "",
+        "data_broker_email": "mrichard@usinfosearch.com",
+        "location": "Ohio",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Mch, Inc. (Dba: Mch Strategic Data)",
+        "privacy_policy": "https://mchdata.com/privacy-policy/",
+        "data_broker_email": "peterlong@mchdata.com",
+        "location": "Missouri",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://mchdata.com/privacy-policy/"
+    },
+    {
+        "name": "Mocavo Inc.",
+        "privacy_policy": "http://www.mocavo.com/privacy",
+        "data_broker_email": "privacy@findmypast.co.uk",
+        "location": "",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.mocavo.com/privacy"
+    },
+    {
+        "name": "Modernize, Inc.",
+        "privacy_policy": "https://modernize.com/privacy",
+        "data_broker_email": "accounting@modernize.com",
+        "location": "Texas",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://modernize.com/privacy"
+    },
+    {
+        "name": "National Background Check",
+        "privacy_policy": "http://www.nationalbackgroundcheck.com/privacy.htm",
+        "data_broker_email": "contactus@nationalbackgroundcheck.com",
+        "location": "Ohio",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.nationalbackgroundcheck.com/privacy.htm"
+    },
+    {
+        "name": "National Consumer Telecom & Utilities Exchange, Inc.",
+        "privacy_policy": "http://www.nctue.com/terms-of-use",
+        "data_broker_email": "admin@nctue.com",
+        "location": "Texas",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.nctue.com/terms-of-use"
+    },
+    {
+        "name": "National Student Clearinghouse",
+        "privacy_policy": "https://studentclearinghouse.org/about/our-privacy-commitment/",
+        "data_broker_email": "legal@studentclearinghouse.org",
+        "location": "Virginia",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://studentclearinghouse.org/about/our-privacy-commitment/"
+    },
+    {
+        "name": "Neustar, Inc.",
+        "privacy_policy": "https://www.home.neustar/privacy",
+        "data_broker_email": "privacy@team.neustar",
+        "location": "Virginia",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.home.neustar/privacy"
+    },
+    {
+        "name": "New England List Services, Inc.",
+        "privacy_policy": "",
+        "data_broker_email": "dave@nelists.com",
+        "location": "Vermont",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Nexxa Group, Inc.",
+        "privacy_policy": "",
+        "data_broker_email": "h.paulus@nexxagroup.com",
+        "location": "Florida",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Onlinesearches (Publicrecords.Onlinesearches.Com)",
+        "privacy_policy": "https://publicrecords.onlinesearches.com/privacy-policy",
+        "data_broker_email": "privacy@peopleconnect.us",
+        "location": "Washington",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://publicrecords.onlinesearches.com/privacy-policy"
+    },
+    {
+        "name": "Open Dealer Exchange, Llc Dba 700 Credit, Llc",
+        "privacy_policy": "https://www.700credit.com/privacy-policy/",
+        "data_broker_email": "JBALBOA@OPENDEALEREXCHANGE.COM",
+        "location": "Michigan",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.700credit.com/privacy-policy/"
+    },
+    {
+        "name": "Openonline",
+        "privacy_policy": "http://www.openonline.com/Home/About-Us/Privacy-Statement.aspx",
+        "data_broker_email": "compliance@openonline.com",
+        "location": "Ohio",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.openonline.com/Home/About-Us/Privacy-Statement.aspx"
+    },
+    {
+        "name": "Oracle America, Inc. (Oracle Data Cloud)",
+        "privacy_policy": "https://www.oracle.com/legal/privacy/",
+        "data_broker_email": "privacy_ww@oracle.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.oracle.com/legal/privacy/"
+    },
+    {
+        "name": "Owneriq, Inc.",
+        "privacy_policy": "https://www.owneriq.com/privacy-notice",
+        "data_broker_email": "tpowell@owneriq.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.owneriq.com/privacy-notice"
+    },
+    {
+        "name": "Parasol Media Inc.",
+        "privacy_policy": "https://v2.parasolleads.com/parasolleads-privacy-policy/",
+        "data_broker_email": "jschwartz@parasolleads.com",
+        "location": "California",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://v2.parasolleads.com/parasolleads-privacy-policy/"
+    },
+    {
+        "name": "Partners Credit And Verification Solutions",
+        "privacy_policy": "http://www.partnerscredit.com/pcvs_privacy.html",
+        "data_broker_email": "pkarbo@creditinterlink.com",
+        "location": "Illinois",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.partnerscredit.com/pcvs_privacy.html"
+    },
+    {
+        "name": "Path2Response",
+        "privacy_policy": "https://path2response.com/privacy/",
+        "data_broker_email": "invoices@path2response.com",
+        "location": "Colorado",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://path2response.com/privacy/"
+    },
+    {
+        "name": "Peek You",
+        "privacy_policy": "http://www.peekyou.com/privacy",
+        "data_broker_email": "info@peekyou.com",
+        "location": "New York",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.peekyou.com/privacy"
+    },
+    {
+        "name": "People By Name",
+        "privacy_policy": "http://www.peoplebyname.com/privacy.php",
+        "data_broker_email": "support@peoplebyname.com",
+        "location": "Florida",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.peoplebyname.com/privacy.php"
+    },
+    {
+        "name": "People Finder: Instant Online Records Retrieval",
+        "privacy_policy": "http://www.peoplefinderonline.net/privacy.html",
+        "data_broker_email": "support@infotracer.com",
+        "location": "",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.peoplefinderonline.net/privacy.html"
+    },
+    {
+        "name": "People Lookup (Data Source Intelius)",
+        "privacy_policy": "http://peoplelookup.com/privacy-faq.php",
+        "data_broker_email": "privacy@peoplelookup.com",
+        "location": "Washington",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://peoplelookup.com/privacy-faq.php"
+    },
+    {
+        "name": "Peopleaz.Org",
+        "privacy_policy": "http://peopleaz.org/privacy.awx",
+        "data_broker_email": "",
+        "location": "",
+        "opt_out_allowed": "No",
+        "removal_link": "http://peopleaz.org/privacy.awx"
+    },
+    {
+        "name": "Peopleconnect, Inc.",
+        "privacy_policy": "http://www.peopleconnect.us/privacy",
+        "data_broker_email": "privacy@peopleconnect.us",
+        "location": "Washington",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.peopleconnect.us/privacy"
+    },
+    {
+        "name": "Peopleg2",
+        "privacy_policy": "http://www.peopleg2.com/resources/privacy-policy.html",
+        "data_broker_email": "",
+        "location": "California",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.peopleg2.com/resources/privacy-policy.html"
+    },
+    {
+        "name": "Peoplesmart",
+        "privacy_policy": "http://www.peoplesmart.com/?_act=privacy",
+        "data_broker_email": "privacy@peoplesmart.com",
+        "location": "Nebraska",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.peoplesmart.com/?_act=privacy"
+    },
+    {
+        "name": "Persopo",
+        "privacy_policy": "http://info.persopo.com/privacy-policy.html",
+        "data_broker_email": "support@persopo.com",
+        "location": "Nevada",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://info.persopo.com/privacy-policy.html"
+    },
+    {
+        "name": "Phone Registry",
+        "privacy_policy": "http://www.phoneregistry.com/privacy.php",
+        "data_broker_email": "",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.phoneregistry.com/privacy.php"
+    },
+    {
+        "name": "Phonebooks.Com (Affiliated With Intelius)",
+        "privacy_policy": "http://www.phonebooks.com/privacy.html",
+        "data_broker_email": "help@phonebooks.com",
+        "location": "",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.phonebooks.com/privacy.html"
+    },
+    {
+        "name": "Pipl, Inc",
+        "privacy_policy": "http://www.pipl.com/privacy/",
+        "data_broker_email": "mail@pipl.com",
+        "location": "Idaho",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.pipl.com/privacy/"
+    },
+    {
+        "name": "Plural Marketing Solutions Inc.",
+        "privacy_policy": "",
+        "data_broker_email": "george@plmrkg.com",
+        "location": "New Jersey",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Plusaddress.Com",
+        "privacy_policy": "https://plusaddress.com/#privacy",
+        "data_broker_email": "info@plusaddresscom",
+        "location": "",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://plusaddress.com/#privacy"
+    },
+    {
+        "name": "Possiblenow Data Services",
+        "privacy_policy": "https://www.possiblenow.com/privacy-statement",
+        "data_broker_email": "bschorer@possiblenow.com",
+        "location": "Georgia",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.possiblenow.com/privacy-statement"
+    },
+    {
+        "name": "Project Applecart Llc",
+        "privacy_policy": "",
+        "data_broker_email": "matt@applecart.co",
+        "location": "New York",
+        "opt_out_allowed": "No",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Public Arrest Records",
+        "privacy_policy": "http://www.publicarrestrecords.org/privacy-policy-terms-of-use/",
+        "data_broker_email": "",
+        "location": "",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "http://www.publicarrestrecords.org/privacy-policy-terms-of-use/"
+    },
+    {
+        "name": "Public Record Site",
+        "privacy_policy": "http://www.public-record-site.com/privacy-policy.htm",
+        "data_broker_email": "privacy@1and1.com",
+        "location": "Pennsylvania",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.public-record-site.com/privacy-policy.htm"
+    },
+    {
+        "name": "Public Records Checks",
+        "privacy_policy": "http://publicrecordschecks.com/privacy.php",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://publicrecordschecks.com/privacy.php"
+    },
+    {
+        "name": "Publicrecords.Com (Affiliated With Intelius)",
+        "privacy_policy": "https://secure.publicrecords.com/privacy.php",
+        "data_broker_email": "privacy@publicrecords.com",
+        "location": "Washington",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://secure.publicrecords.com/privacy.php"
+    },
+    {
+        "name": "Publicrecordssearchonline.Org",
+        "privacy_policy": "https://publicrecordssearchonline.org/privacy/",
+        "data_broker_email": "contact@publicrecordssearchonline.org",
+        "location": "",
+        "opt_out_allowed": "No",
+        "removal_link": "https://publicrecordssearchonline.org/privacy/"
+    },
+    {
+        "name": "Quality Planning Corporation",
+        "privacy_policy": "https://www.verisk.com/privacy-trademarks-use/iso-online-privacy-notice/",
+        "data_broker_email": "jvolk@verisk.com",
+        "location": "California",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.verisk.com/privacy-trademarks-use/iso-online-privacy-notice/"
+    },
+    {
+        "name": "Records Authority",
+        "privacy_policy": "http://recordsauthority.com/access/privacy.php",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://recordsauthority.com/access/privacy.php"
+    },
+    {
+        "name": "Rental Property Solutions, Llc",
+        "privacy_policy": "https://www.corelogic.com/privacy.aspx",
+        "data_broker_email": "dghazaleh@corelogic.com",
+        "location": "Texas",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.corelogic.com/privacy.aspx"
+    },
+    {
+        "name": "Reveal Mobile Inc",
+        "privacy_policy": "https://revealmobile.com/privacy/",
+        "data_broker_email": "andy@revealmobile.com",
+        "location": "North Carolina",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://revealmobile.com/privacy/"
+    },
+    {
+        "name": "Reverse Genie",
+        "privacy_policy": "http://www.reversegenie.com/privacy.php",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.reversegenie.com/privacy.php"
+    },
+    {
+        "name": "Reverse Mobile",
+        "privacy_policy": "http://www.reversemobile.com/index.php?xpath=privacy",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.reversemobile.com/index.php?xpath=privacy"
+    },
+    {
+        "name": "Reverse Number Database",
+        "privacy_policy": "http://reversenumberdatabase.com/privacy",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://reversenumberdatabase.com/privacy"
+    },
+    {
+        "name": "Reverse Phone Lookup",
+        "privacy_policy": "http://www.reversephonelookup.com/privacy.html",
+        "data_broker_email": "",
+        "location": "",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.reversephonelookup.com/privacy.html"
+    },
+    {
+        "name": "Reverserecords.Org",
+        "privacy_policy": "http://reverserecords.org/index.php?xpath=privacy&code=",
+        "data_broker_email": "support@infotracer.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "http://reverserecords.org/index.php?xpath=privacy&code="
+    },
+    {
+        "name": "Roots Web (Associated With Ancestry.Com)",
+        "privacy_policy": "https://www.ancestry.com/cs/privacyphilosophy",
+        "data_broker_email": "content@ancestry.com",
+        "location": "California",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.ancestry.com/cs/privacyphilosophy"
+    },
+    {
+        "name": "Ruf Strategic Solutions",
+        "privacy_policy": "https://ruf.com/privacy-policy/",
+        "data_broker_email": "matthussey@infutor.com",
+        "location": "Kansas",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://ruf.com/privacy-policy/"
+    },
+    {
+        "name": "Sagestream, Llc",
+        "privacy_policy": "https://www.sagestreamllc.com/privacy-policy/",
+        "data_broker_email": "ken_meiser@symantec.com",
+        "location": "California",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.sagestreamllc.com/privacy-policy/"
+    },
+    {
+        "name": "Search Bug",
+        "privacy_policy": "http://www.searchbug.com/privacy.aspx",
+        "data_broker_email": "",
+        "location": "California",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.searchbug.com/privacy.aspx"
+    },
+    {
+        "name": "Skipmasher, Inc.",
+        "privacy_policy": "https://www.skipsmasher.com/privacy.aspx",
+        "data_broker_email": "info@skipsmasher.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.skipsmasher.com/privacy.aspx"
+    },
+    {
+        "name": "Snoopstation.Com/",
+        "privacy_policy": "http://www.snoopstation.com/privacy.php",
+        "data_broker_email": "privacy@peopleconnect.us",
+        "location": "Washington",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.snoopstation.com/privacy.php"
+    },
+    {
+        "name": "Social Catfish, Llc",
+        "privacy_policy": "https://socialcatfish.com/faq/privacy/",
+        "data_broker_email": "Matt@Socialcatfish.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://socialcatfish.com/faq/privacy/"
+    },
+    {
+        "name": "Sorted By Birthdate.Com",
+        "privacy_policy": "http://sortedbybirthdate.com/privacy.html",
+        "data_broker_email": "webmaster@oklavoters.com",
+        "location": "New Hampshire",
+        "opt_out_allowed": "No",
+        "removal_link": "http://sortedbybirthdate.com/privacy.html"
+    },
+    {
+        "name": "Sorted By Name",
+        "privacy_policy": "http://sortedbyname.com/privacy.html",
+        "data_broker_email": "webmaster@oklavoters.com",
+        "location": "New Hampshire",
+        "opt_out_allowed": "No",
+        "removal_link": "http://sortedbyname.com/privacy.html"
+    },
+    {
+        "name": "Speedeon Data, Llc",
+        "privacy_policy": "https://www.speedeondata.com/privacy-policy",
+        "data_broker_email": "mbagley@speedeondata.com",
+        "location": "Ohio",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.speedeondata.com/privacy-policy"
+    },
+    {
+        "name": "Spokeo, Inc.",
+        "privacy_policy": "https://www.spokeo.com/privacy-policy",
+        "data_broker_email": "jmatthes@spokeo.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.spokeo.com/privacy-policy"
+    },
+    {
+        "name": "Spy Dialer, Inc.",
+        "privacy_policy": "https://www.spydialer.com/privacy.aspx",
+        "data_broker_email": "info@spydialer.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.spydialer.com/privacy.aspx"
+    },
+    {
+        "name": "State Records (United States State Records)",
+        "privacy_policy": "http://www.staterecords.org/index.php?xpath=privacy",
+        "data_broker_email": "",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.staterecords.org/index.php?xpath=privacy"
+    },
+    {
+        "name": "Sterling",
+        "privacy_policy": "https://www.sterlingcheck.com/about/privacy/",
+        "data_broker_email": "privacy@sterlingts.com",
+        "location": "New York",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.sterlingcheck.com/about/privacy/"
+    },
+    {
+        "name": "Sterling Data Llc",
+        "privacy_policy": "",
+        "data_broker_email": "info@sterlingd.com",
+        "location": "Virginia",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "N/A"
+    },
+    {
+        "name": "Strategic Information Resources",
+        "privacy_policy": "https://strategicinfo.com/wp-content/uploads/SIR_Privacy_Statement-Jan2016.pdf",
+        "data_broker_email": "jdrziak@strategicinfo.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://strategicinfo.com/wp-content/uploads/SIR_Privacy_Statement-Jan2016.pdf"
+    },
+    {
+        "name": "Superpages",
+        "privacy_policy": "https://www.superpages.com/about/privacy.html",
+        "data_broker_email": "",
+        "location": "Texas",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.superpages.com/about/privacy.html"
+    },
+    {
+        "name": "Talx Corporation",
+        "privacy_policy": "https://www.theworknumber.com/privacy-policy/",
+        "data_broker_email": "vtinquiries@equifax.com",
+        "location": "Missouri",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.theworknumber.com/privacy-policy/"
+    },
+    {
+        "name": "Teletrack, Llc",
+        "privacy_policy": "https://www.corelogic.com/privacy.aspx",
+        "data_broker_email": "dghazaleh@corelogic.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.corelogic.com/privacy.aspx"
+    },
+    {
+        "name": "Tenant Detective",
+        "privacy_policy": "http://www.tenantdetective.com/privacypolicy.php",
+        "data_broker_email": "privacy@cisnationwide.com",
+        "location": "",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "http://www.tenantdetective.com/privacypolicy.php"
+    },
+    {
+        "name": "Thatsthem",
+        "privacy_policy": "https://thatsthem.com/privacy-policy",
+        "data_broker_email": "info@ThatsThem.com",
+        "location": "Washington",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://thatsthem.com/privacy-policy"
+    },
+    {
+        "name": "The Lead Company, Inc.",
+        "privacy_policy": "https://lead.co/privacy/",
+        "data_broker_email": "dave@lead.co",
+        "location": "Michigan",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://lead.co/privacy/"
+    },
+    {
+        "name": "Thomas Reuters (Crc) Llc (D/B/A Refinitiv)",
+        "privacy_policy": "https://www.refinitiv.com/en/policies/privacy-statement",
+        "data_broker_email": "privacy.enquiries@refinitiv.com",
+        "location": "Connecticut",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.refinitiv.com/en/policies/privacy-statement"
+    },
+    {
+        "name": "Tlo Online Investigative Systems",
+        "privacy_policy": "https://www.tlo.com/privacy",
+        "data_broker_email": "TLOxpSupport@transunion.com",
+        "location": "Florida",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.tlo.com/privacy"
+    },
+    {
+        "name": "Towerdata, Inc.",
+        "privacy_policy": "https://www.towerdata.com/privacy-policy",
+        "data_broker_email": "tburke@towerdata.com",
+        "location": "New York",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.towerdata.com/privacy-policy"
+    },
+    {
+        "name": "Tracers Information Specialists, Inc.",
+        "privacy_policy": "https://www.tracersinfoonline.com/en/privacy/",
+        "data_broker_email": "",
+        "location": "Florida",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.tracersinfoonline.com/en/privacy/"
+    },
+    {
+        "name": "Transunion",
+        "privacy_policy": "https://www.transunion.com/legal/privacy-policy",
+        "data_broker_email": "keith.mccawley@transunion.com",
+        "location": "Illinois",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.transunion.com/legal/privacy-policy"
+    },
+    {
+        "name": "Truthfinder, Llc",
+        "privacy_policy": "https://www.truthfinder.com/privacy-policy/",
+        "data_broker_email": "help@truthfinder.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.truthfinder.com/privacy-policy/"
+    },
+    {
+        "name": "Twine Data, Inc",
+        "privacy_policy": "https://www.truedata.co/privacy-policy/",
+        "data_broker_email": "bmorgan@twinedata.com",
+        "location": "California",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.truedata.co/privacy-policy/"
+    },
+    {
+        "name": "Ucc411",
+        "privacy_policy": "http://www.ucc411.com/privacy-policy.aspx",
+        "data_broker_email": "info@andersonadvisors.com",
+        "location": "Nevada",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "http://www.ucc411.com/privacy-policy.aspx"
+    },
+    {
+        "name": "Ultimatewhitepages",
+        "privacy_policy": "http://www.detectiveunlimited.com/privacy-policy.html",
+        "data_broker_email": "webmaster@ultimatewhitepages.org",
+        "location": "Washington",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.detectiveunlimited.com/privacy-policy.html"
+    },
+    {
+        "name": "\"Ultimatewhitepages \"",
+        "privacy_policy": "http://www.detectiveunlimited.com/privacy-policy.html",
+        "data_broker_email": "webmaster@ultimatewhitepages.org",
+        "location": "Washington",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.detectiveunlimited.com/privacy-policy.html"
+    },
+    {
+        "name": "Valassis Direct Mail, Inc",
+        "privacy_policy": "https://www.valassis.com/about-us/privacy-policy",
+        "data_broker_email": "datalicensing@valassis.com",
+        "location": "Vermont",
+        "opt_out_allowed": "No",
+        "removal_link": "https://www.valassis.com/about-us/privacy-policy"
+    },
+    {
+        "name": "Valley Yellow Pages (Myyp.Com)",
+        "privacy_policy": "http://www.myyp.com/privacy",
+        "data_broker_email": "vyp@myyp.com",
+        "location": "California",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.myyp.com/privacy"
+    },
+    {
+        "name": "Viant Technology Llc",
+        "privacy_policy": "https://www.viantinc.com/privacy-policy/",
+        "data_broker_email": "bnojima@viantinc.com",
+        "location": "California",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.viantinc.com/privacy-policy/"
+    },
+    {
+        "name": "Voter Factory",
+        "privacy_policy": "http://www.voterfactory.com/Privacy.html",
+        "data_broker_email": "help@VoterFactory.com",
+        "location": "",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.voterfactory.com/Privacy.html"
+    },
+    {
+        "name": "Webbula Llc",
+        "privacy_policy": "https://webbula.com/privacy-policy/",
+        "data_broker_email": "privacy@webbula.com",
+        "location": "Pennsylvania",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://webbula.com/privacy-policy/"
+    },
+    {
+        "name": "West Publishing Corporation",
+        "privacy_policy": "https://www.thomsonreuters.com/en/privacy-statement.html#legitimate-interests",
+        "data_broker_email": "sonya.southward@thomsonreuters.com",
+        "location": "Minnesota",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "https://www.thomsonreuters.com/en/privacy-statement.html#legitimate-interests"
+    },
+    {
+        "name": "Whitepages+",
+        "privacy_policy": "https://whitepages.plus/privacy",
+        "data_broker_email": "mail@whitepages.plus",
+        "location": "California",
+        "opt_out_allowed": "No",
+        "removal_link": "https://whitepages.plus/privacy"
+    },
+    {
+        "name": "Whitepages, Inc.",
+        "privacy_policy": "https://www.whitepages.com/data-policy",
+        "data_broker_email": "support@whitepages.com",
+        "location": "Washington",
+        "opt_out_allowed": "Unclear",
+        "removal_link": "https://www.whitepages.com/data-policy"
+    },
+    {
+        "name": "Whoodle, Llc",
+        "privacy_policy": "https://www.whoodle.com/privacy",
+        "data_broker_email": "support@whoodle.com",
+        "location": "Florida",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "https://www.whoodle.com/privacy"
+    },
+    {
+        "name": "Wiland, Inc.",
+        "privacy_policy": "https://wiland.com/privacy-policy/",
+        "data_broker_email": "privacy@wiland.com",
+        "location": "Colorado",
+        "opt_out_allowed": "No",
+        "removal_link": "https://wiland.com/privacy-policy/"
+    },
+    {
+        "name": "Yasni",
+        "privacy_policy": "http://www.yasni.com/privacy",
+        "data_broker_email": "info@yasni.com",
+        "location": "",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "http://www.yasni.com/privacy"
+    },
+    {
+        "name": "Ypstate.Com",
+        "privacy_policy": "http://www.ypstate.com/wiki/ypstate/contactus/",
+        "data_broker_email": "",
+        "location": "",
+        "opt_out_allowed": "No",
+        "removal_link": "http://www.ypstate.com/wiki/ypstate/contactus/"
+    },
+    {
+        "name": "Zabasearch",
+        "privacy_policy": "http://www.peopleconnect.us/privacy",
+        "data_broker_email": "privacy@peopleconnect.us",
+        "location": "Washington",
+        "opt_out_allowed": "Yes - by Opt-Out Form",
+        "removal_link": "http://www.peopleconnect.us/privacy"
+    },
+    {
+        "name": "Zoominfo.Com",
+        "privacy_policy": "http://www.zoominfo.com/business/about-zoominfo/privacy-policy",
+        "data_broker_email": "privacy@zoominfo.com",
+        "location": "Massachusetts",
+        "opt_out_allowed": "Yes - by email",
+        "removal_link": "http://www.zoominfo.com/business/about-zoominfo/privacy-policy"
+    }
+]
