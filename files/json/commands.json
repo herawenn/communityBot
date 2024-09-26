@@ -1,153 +1,28 @@
 {
-  "shodanhost": {
-    "description": "Get detailed information about a specific host from Shodan.",
-    "usage": "..shodanhost <IP address>",
-    "example": "..shodanhost 8.8.8.8"
-  },
-  "shodansearch": {
-    "description": "Search Shodan for specific terms.",
-    "usage": "..shodansearch <search query>",
-    "example": "..shodansearch 'Apache server'"
-  },
-  "shodanscan": {
-    "description": "Scan a specific host using Shodan. Note: Requires Shodan scan credits.",
-    "usage": "..shodanscan <IP address>",
-    "example": "..shodanscan 192.168.1.1"
-  },
-  "shodanscanstatus": {
-    "description": "Check the status of a Shodan scan.",
-    "usage": "..shodanscanstatus <scan_id>",
-    "example": "..shodanscanstatus 7891234567890"
-  },
-  "shodanscanresults": {
-    "description": "Get the results of a Shodan scan.",
-    "usage": "..shodanscanresults <scan_id>",
-    "example": "..shodanscanresults 7891234567890"
-  },
-  "shodanhelp": {
-    "description": "Displays help for the Shodan commands.",
-    "usage": "..shodanhelp",
-    "example": "..shodanhelp"
-  },
-  "recon": {
-    "description": "Perform network reconnaissance using Nmap.",
-    "usage": "..recon <target> [options]",
-    "example": "..recon 192.168.1.10 -sS -T4"
-  },
-  "reconhelp": {
-    "description": "Displays help for the 'recon' command.",
-    "usage": "..reconhelp",
-    "example": "..reconhelp"
-  },
-  "cancelscan": {
-    "description": "Cancels the ongoing Nmap scan.",
-    "usage": "..cancelscan",
-    "example": "..cancelscan"
-  },
-  "aiscan": {
-    "description": "Generate a vulnerability assessment for a given IP address. This command can only be used in DMs.",
-    "usage": "..aiscan <ip_address>",
-    "example": "..aiscan 192.168.1.1"
-  },
-  "categories": {
-    "description": "Lists all exploit categories.",
-    "usage": "..categories",
-    "example": "..categories"
-  },
-  "exploits": {
-    "description": "Searches for exploits by keyword.",
-    "usage": "..exploits <keyword>",
-    "example": "..exploits wordpress"
-  },
-  "download": {
-    "description": "Downloads a specific exploit by ID.",
-    "usage": "..download <exploit_id>",
-    "example": "..download 44645"
-  },
-  "kick": {
-    "description": "Kicks a user from the server.",
-    "usage": "..kick <user> [reason]",
-    "example": "..kick @user Spamming"
-  },
-  "ban": {
-    "description": "Bans a user from the server.",
-    "usage": "..ban <user> [reason]",
-    "example": "..ban @user Being toxic"
-  },
-  "unban": {
-    "description": "Unbans a user from the server.",
-    "usage": "..unban <user#1234>",
-    "example": "..unban ExampleUser#1234"
-  },
-  "mute": {
-    "description": "Mutes a user in the server. Specify an optional duration in seconds.",
-    "usage": "..mute <user> [reason] [duration in seconds]",
-    "example": "..mute @user Spamming 600"
-  },
-  "unmute": {
-    "description": "Unmutes a user in the server.",
-    "usage": "..unmute <user>",
-    "example": "..unmute @user"
-  },
-  "clear": {
-    "description": "Deletes a specified number of messages. Requires 'Manage Messages' permissions.",
-    "usage": "..clear <amount>",
-    "example": "..clear 5"
-  },
-  "warn": {
-    "description": "Warns a user.",
-    "usage": "..warn <user> [reason]",
-    "example": "..warn @user For spamming"
-  },
-  "search": {
-    "description": "Search Private dbs for OSINT data.",
-    "usage": "..search <query_type> <query>",
-    "example": "..search email example@example.com"
-  },
-  "removeaccount": {
-    "description": "Helps with removing your account from specific platforms.",
-    "usage": "..removeaccount <platform>",
-    "example": "..removeaccount facebook"
-  },
-  "removedata": {
-    "description": "Helps with removing your information from data brokers.",
-    "usage": "..removedata",
-    "example": "..removedata"
-  },
-  "footprint": {
-    "description": "Search your digital footprint.",
-    "usage": "..footprint <username>",
-    "example": "..footprint johndoe"
-  },
-  "rating": {
-    "description": "Check the strength of a password.",
-    "usage": "..rating <password>",
-    "example": "..rating P@$$wOrd"
-  },
-  "password": {
-    "description": "Generate a random password. Specify an optional length.",
-    "usage": "..password [length]",
-    "example": "..password 16"
-  },
-  "obfuscate": {
-    "description": "Obfuscates the attached code file.",
-    "usage": "..obfuscate",
-    "example": "..obfuscate (with attached file)"
-  },
-  "help": {
-    "description": "Displays information about the bot and its commands.",
-    "usage": "..help [category]",
-    "example": "..help Security"
-  },
   "ping": {
-    "description": "Check the bot's latency.",
+    "description": "Checks the bot's latency.",
     "usage": "..ping",
     "example": "..ping"
   },
+  "userinfo": {
+    "description": "Displays information about a user.",
+    "usage": "..userinfo [user mention]",
+    "example": "..userinfo @user"
+  },
+  "serverinfo": {
+    "description": "Get information about the current server.",
+    "usage": "..serverinfo",
+    "example": "..serverinfo"
+  },
+  "remind": {
+    "description": "Set a reminder for yourself.",
+    "usage": "..remind <time in seconds> <reminder message>",
+    "example": "..remind 300 \"Buy milk\""
+  },
   "8ball": {
     "description": "Ask the Magic 8 Ball a question.",
-    "usage": "..8ball <question>",
-    "example": "..8ball Will I win the lottery?"
+    "usage": "..8ball <your question>",
+    "example": "..8ball Will I pass my exam?"
   },
   "dice": {
     "description": "Roll a 6-sided dice.",
@@ -164,129 +39,209 @@
     "usage": "..joke",
     "example": "..joke"
   },
-  "reminder": {
-    "description": "Set a reminder for yourself.",
-    "usage": "..remind <time in seconds> <reminder message>",
-    "example": "..remind 600 Take a break"
-  },
   "chat": {
-    "description": "Talk to the AI.",
+    "description": "Converse with PortLordsAI.",
     "usage": "..chat <message>",
-    "example": "..chat Hello, how are you?"
+    "example": "..chat What is the capital of France?"
   },
-  "userinfo": {
-    "description": "Get information about a user.",
-    "usage": "..userinfo [user mention]",
-    "example": "..userinfo @user"
+  "code": {
+    "description": "Get coding help from PortLordsAI.",
+    "usage": "..code <message>",
+    "example": "..code Help me fix this Python function."
   },
-  "serverinfo": {
-    "description": "Get information about the current server.",
-    "usage": "..serverinfo",
-    "example": "..serverinfo"
+  "full": {
+    "description": "Sends a random fullz.",
+    "usage": "..full",
+    "example": "..full"
+  },
+  "stealer": {
+    "description": "Sends a stealer log.",
+    "usage": "..stealer",
+    "example": "..stealer"
+  },
+  "privacy": {
+    "description": "Get data removal links for popular data brokers or specific services.",
+    "usage": "..privacy [service]",
+    "example": "..privacy Facebook"
+  },
+  "myusername": {
+    "description": "Searches top 500 sites for your digital footprint.",
+    "usage": "..myusername <username>",
+    "example": "..myusername johndoe"
+  },
+  "ratepassword": {
+    "description": "Check the strength of a password.",
+    "usage": "..ratepassword <password>",
+    "example": "..ratepassword P@$$wOrd123"
+  },
+  "hibp": {
+    "description": "Check if an email has been involved in data breaches.",
+    "usage": "..hibp <email>",
+    "example": "..hibp john.doe@example.com"
+  },
+  "privacytips": {
+    "description": "Provide privacy tips and best practices.",
+    "usage": "..privacytips",
+    "example": "..privacytips"
   },
   "quiz": {
     "description": "Start a cybersecurity quiz.",
     "usage": "..quiz",
     "example": "..quiz"
   },
+  "leaderboard": {
+    "description": "Displays the quiz leaderboard.",
+    "usage": "..leaderboard",
+    "example": "..leaderboard"
+  },
+  "categories": {
+    "description": "Lists all exploit categories.",
+    "usage": "..categories",
+    "example": "..categories"
+  },
+  "exploits": {
+    "description": "Searches for exploits by keyword.",
+    "usage": "..exploits <keyword>",
+    "example": "..exploits wordpress"
+  },
+  "download": {
+    "description": "Downloads a specific exploit by ID.",
+    "usage": "..download <exploit_id>",
+    "example": "..download 44645"
+  },
+  "recon": {
+    "description": "Perform network reconnaissance using Nmap.",
+    "usage": "..recon <target>",
+    "example": "..recon 192.168.1.10"
+  },
+  "reconhelp": {
+    "description": "Displays help for the 'recon' command.",
+    "usage": "..reconhelp",
+    "example": "..reconhelp"
+  },
+  "cancelscan": {
+    "description": "Cancels the ongoing Nmap scan.",
+    "usage": "..cancelscan",
+    "example": "..cancelscan"
+  },
+  "search": {
+    "description": "Search Private dbs for OSINT data.",
+    "usage": "..search <query_type> <query>",
+    "example": "..search email example@example.com"
+  },
+  "ask": {
+    "description": "Ask censysGPT for a Censys search query.",
+    "usage": "..ask <query>",
+    "example": "..ask Find servers in the US that are running Apache"
+  },
+  "censys": {
+    "description": "Search Censys using natural language.",
+    "usage": "..censys",
+    "example": "..censys"
+  },
+  "allusers": {
+    "description": "Displays the total number of users in the database.",
+    "usage": "..allusers",
+    "example": "..allusers"
+  },
   "adduser": {
-    "description": "Add a user to the database.",
-    "usage": "..adduser <user_id> <username>",
-    "example": "..adduser 1234567890 JohnDoe"
+    "description": "Adds a test user to the database.",
+    "usage": "..adduser <user ID> <username>",
+    "example": "..adduser 123456789012345678 JohnDoe"
   },
   "getuser": {
-    "description": "Retrieve user information.",
-    "usage": "..getuser <user_id>",
-    "example": "..getuser 1234567890"
+    "description": "Retrieves information about a user from the database.",
+    "usage": "..getuser <user ID>",
+    "example": "..getuser 123456789012345678"
   },
   "userpoints": {
-    "description": "Update user points.",
-    "usage": "..userpoints <user_id> <points>",
-    "example": "..userpoints 1234567890 100"
+    "description": "Updates the points for a user in the database.",
+    "usage": "..userpoints <user ID> <points>",
+    "example": "..userpoints 123456789012345678 100"
   },
   "usertier": {
-    "description": "Update user tier.",
-    "usage": "..usertier <user_id> <tier>",
-    "example": "..usertier 1234567890 2"
-  },
-  "userverified": {
-    "description": "Update user verified status.",
-    "usage": "..userverified <user_id> <true/false>",
-    "example": "..userverified 1234567890 true"
-  },
-  "muteduntil": {
-    "description": "Update user muted timestamp.",
-    "usage": "..muteduntil <user_id> <YYYY-MM-DD HH:MM:SS>",
-    "example": "..muteduntil 1234567890 \"2024-04-12 10:00:00\""
-  },
-  "banreason": {
-    "description": "Update user ban reason.",
-    "usage": "..banreason <user_id> <reason>",
-    "example": "..banreason 1234567890 \"Spamming\""
-  },
-  "warncount": {
-    "description": "Update user warn count.",
-    "usage": "..warncount <user_id> <warn_count>",
-    "example": "..warncount 1234567890 3"
+    "description": "Updates the tier for a user in the database.",
+    "usage": "..usertier <user ID> <tier>",
+    "example": "..usertier 123456789012345678 2"
   },
   "reload": {
-    "description": "Reload bot cogs.",
-    "usage": "..reload <cog>",
-    "example": "..reload shodan"
+    "description": "Reloads bot cogs.",
+    "usage": "..reload [cog]",
+    "example": "..reload ai"
+  },
+  "crawl": {
+    "description": "Runs the Nmap scan and updates devices.json. ",
+    "usage": "..crawl <range_name>",
+    "example": "..crawl Range1"
+  },
+  "postdevice": {
+    "description": "Posts a random device from devices.json to the channel.",
+    "usage": "..postdevice",
+    "example": "..postdevice"
   },
   "verification": {
-    "description": "Verification process. Starts or restarts the verification flow.",
+    "description": "Manage the verification process.",
     "usage": "..verification",
     "example": "..verification"
   },
   "tiers": {
-    "description": "Show tier structure.",
+    "description": "Show the tier structure.",
     "usage": "..tiers",
     "example": "..tiers"
   },
-  "report": {
-    "description": "Report a bug, error, or inconsistency.",
-    "usage": "..report <your message>",
-    "example": "..report There is a bug in the shodan command"
+  "impersonate": {
+    "description": "Impersonate a user and send a message.",
+    "usage": "..impersonate <user mention> <message>",
+    "example": "..impersonate @user Hello, this is PortLordsAI!"
   },
-  "censyshost": {
-    "description": "Get detailed information about a specific host from Censys.",
-    "usage": "..censyshost <IP address>",
-    "example": "..censyshost 8.8.8.8"
-  },
-  "censyssearch": {
-    "description": "Search Censys for specific terms.",
-    "usage": "..censyssearch <search query>",
-    "example": "..censyssearch 'Apache server'"
-  },
-  "ask": {
-    "description": "Ask censysGPT for a search command.",
-    "usage": "..ask <question>",
-    "example": "..ask what are the servers running in California"
+  "clear": {
+    "description": "Deletes a specified number of messages.",
+    "usage": "..clear <amount>",
+    "example": "..clear 5"
   },
   "proxy": {
-    "description": "Retrieves a list of proxies from the configured API.",
+    "description": "Retrieves a list of proxies.",
     "usage": "..proxy",
     "example": "..proxy"
   },
-  "fullz": {
-    "description": "Sends a random entry from fullz.json.",
-    "usage": "..fullz",
-    "example": "..fullz"
-  },
-  "impersonate": {
-    "description": "Impersonate a user and send a message. This command is for bot owners only.",
-    "usage": "..impersonate <user> <message>",
-    "example": "..impersonate @user Hello, how are you?"
+  "obfuscate": {
+    "description": "Obfuscates the attached code file.",
+    "usage": "..obfuscate",
+    "example": ""
   },
   "roles": {
-    "description": "Post the roles selection message.",
+    "description": "Post the role selection message and set up the reaction roles.",
     "usage": "..roles",
     "example": "..roles"
   },
-  "embed": {
-    "description": "Obfuscation embed.",
-    "usage": "..embed",
-    "example": "..embed"
+  "kick": {
+    "description": "Kicks a user from the server.",
+    "usage": "..kick <user> [reason]",
+    "example": "..kick @user Spamming"
+  },
+  "ban": {
+    "description": "Bans a user from the server.",
+    "usage": "..ban <user> [reason]",
+    "example": "..ban @user Breaking rules"
+  },
+  "unban": {
+    "description": "Unbans a user from the server.",
+    "usage": "..unban <user#1234>",
+    "example": "..unban User#1234"
+  },
+  "mute": {
+    "description": "Mutes a user in the server.",
+    "usage": "..mute <user> [reason] [duration in seconds]",
+    "example": "..mute @user Abusive language 300"
+  },
+  "unmute": {
+    "description": "Unmutes a user in the server.",
+    "usage": "..unmute <user>",
+    "example": "..unmute @user"
+  },
+  "warn": {
+    "description": "Warns a user.",
+    "usage": "..warn <user> [reason]",
+    "example": "..warn @user Breaking rules"
   }
 }
