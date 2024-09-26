@@ -1,7 +1,7 @@
 {
   "discord": {
-    "version": "",
-    "prefix": ""
+    "version": "2.0",
+    "prefix": ".."
   },
   "identifiers": {
     "owner_id": "",
@@ -10,37 +10,47 @@
     "muted_id": "",
     "verified_role_id": "",
     "unverified_role_id": "",
-    "obf_channel_id": "",
-    "exploit_channel_id": "",
-    "ai_channel_id": "",
-    "shodan_channel_id": "",
+    "beginner_role_id": "",
+    "intermediate_role_id": "",
+    "advanced_role_id": "",
+    "whitehat_role_id": "",
+    "blackhat_role_id": "",
+    "developer_role_id": "",
+    "networking_role_id": "",
+    "webdevelopment_role_id": "",
+    "reversing_role_id": "",
+    "pentesting_role_id": "",
+    "alerts_role_id": "",
     "verification_channel_id": "",
     "logging_channel_id": "",
     "security_channel_id": "",
     "audit_channel_id": "",
-    "welcome_channel_id": "",
-    "farewell_channel_id": "",
+    "botspam_channel_id": "",
     "quiz_channel_id": "",
-    "report_channel_id": "",
     "react_channel_id": "",
-    "beginner_role_id": "",
-    "intermediate_role_id": "",
-    "advanced_role_id": "",
-    "networking_role_id": "",
-    "websecurity_role_id": "",
-    "reversing_role_id": "",
-    "pentesting_role_id": "",
-    "alerts_role_id": ""
+    "crawler_channel_id": "",
+    "news_channel_id": "",
+    "fullz_channel_id": "",
+    "stealer_channel_id": ""
   },
   "paths": {
-    "password_list_path": "",
+    "cogs_directory": "",
+    "root_directory": "",
     "exploit_path": "",
     "exploit_file": "",
-    "root_directory": "",
     "database_path": "",
-    "cogs_directory": "",
     "tips_file_path": "",
-    "links_file_path": ""
+    "links_file_path": "",
+    "brokers_file_path": "",
+    "removal_file_path": "",
+    "fullz_path": "",
+    "stealzies_path": "",
+    "posted_files_path": ""
+  },
+  "logging": {
+    "log_path": "",
+    "log_file_name": "",
+    "log_level": ""
   },
   "embeds": {
     "embed_banner": "",
@@ -51,74 +61,31 @@
       "error": ""
     }
   },
-  "apis": {
-    "gemini": {
-      "chat_prompt": "",
-      "aiscan_prompt": "",
-      "temperature": null,
-      "model": ""
-    },
-    "shodan": {},
-    "dehashed": {
-      "results_limit": null
-    },
-    "proxy_api": ""
-  },
-  "settings": {
-    "rate_limit": null,
-    "delete_commands": null,
-    "delete_command_delay": null,
-    "delete_responses": null,
-    "delete_response_delay": null,
-    "delete_errors": null,
-    "delete_errors_delay": null,
-    "quiz_task_enabled": null
-  },
-  "logging": {
-    "log_path": "",
-    "log_file_name": "",
-    "log_level": ""
+  "features": {
+    "quiz": "false",
+    "security_tips": "false",
+    "crawler": "false",
+    "newsfeed": "false",
+    "fullz": "false",
+    "stealer": "false"
   },
   "moderation": {
-    "spam_threshold": null,
-    "spam_message_count": null,
-    "wall_of_text_length": null,
-    "max_emojis": null,
-    "max_attachments": null,
-    "max_mentions": null,
-    "first_mute_duration": null,
-    "second_mute_duration": null
+    "spam_threshold": "",
+    "spam_message_count": "",
+    "wall_of_text_length": "",
+    "max_emojis": "",
+    "max_attachments": "",
+    "max_mentions": "",
+    "first_mute_duration": "",
+    "second_mute_duration": ""
   },
-  "tiers": [
-    {
-      "tier_id": null,
-      "name": "",
-      "role_name": "",
-      "required_points": null
-    },
-    {
-      "tier_id": null,
-      "name": "",
-      "role_name": "",
-      "required_points": null
-    },
-    {
-      "tier_id": null,
-      "name": "",
-      "role_name": "",
-      "required_points": null
-    },
-    {
-      "tier_id": null,
-      "name": "",
-      "role_name": "",
-      "required_points": null
-    },
-    {
-      "tier_id": null,
-      "name": "",
-      "role_name": "",
-      "required_points": null
-    }
-  ]
+  "settings": {
+    "rate_limit": "",
+    "delete_commands": "",
+    "delete_command_delay": "",
+    "delete_responses": "",
+    "delete_response_delay": "",
+    "delete_errors": "",
+    "delete_errors_delay": ""
+  }
 }
